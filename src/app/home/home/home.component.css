@@ -85,9 +85,9 @@
     transition: all .5s;
 }
 .icon-container.grad-style-cd-light::after {
-    background-image: -webkit-linear-gradient(45deg, #e9a17b, #ff7cb0);
-    background-image: -o-linear-gradient(45deg, #e9a17b, #ff7cb0);
-    background-image: linear-gradient(45deg, #e9a17b, #ff7cb0);
+    background-image: -webkit-linear-gradient(45deg, #2921a999, #ff7cb0);
+    background-image: -o-linear-gradient(45deg, #2921a999, #ff7cb0);
+    background-image: linear-gradient(45deg, #2921a999, #ff7cb0);
     background-repeat: repeat-x;
 }
 .content-block:hover .icon-container i {
@@ -121,9 +121,9 @@
     bottom: 1px;
     left: 1px;
     border-radius: 12px;
-    background-image: -webkit-linear-gradient(350deg, #e9a17b, #ff7cb0);
-    background-image: -o-linear-gradient(350deg, #e9a17b, #ff7cb0);
-    background-image: linear-gradient(100deg, #e9a17b, #ff7cb0);
+    background-image: -webkit-linear-gradient(350deg, #2921a999, #ff7cb0);
+    background-image: -o-linear-gradient(350deg, #2921a999, #ff7cb0);
+    background-image: linear-gradient(100deg, #2921a999, #ff7cb0);
     background-repeat: repeat-x;
     outline: 1px solid transparent;
     -webkit-transition: all .5s;
@@ -179,4 +179,18 @@ box-shadow:-5px 0px 29px 1px #888;
     padding: 220px 0px; 
     visibility: visible; 
     animation-name: fadeIn; 
+}
+/* Styles for trusted clients */
+.trusted-clients{
+    border: 3px solid #2921a999;
+    border-radius: 2.25rem;
+    height: 115px;
+    overflow: hidden;
+    margin: 13px 3px;
+}
+.trusted-clients:hover{
+    transform: scale(1, 1.1);
+}
+.img-thumbnail{
+    border:none;
 }
