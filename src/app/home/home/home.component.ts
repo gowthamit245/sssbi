@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     console.log(componentPosition);
     const scrollPosition = window.pageYOffset
     console.log(scrollPosition);
-    if (scrollPosition > 2470) {
+    if (scrollPosition > 1200) {
       this.techScrollView = 'boxTechView'
     } else {
       this.techScrollView = 'boxTechView-close'

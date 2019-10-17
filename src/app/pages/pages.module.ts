@@ -6,6 +6,7 @@ import { FooterComponent} from '../shared/footer/footer.component';
 import { AboutComponent } from '../pages/about/about.component';
 import { ContactComponent } from '../pages/contact/contact.component';
 import { LayoutComponent } from './layout/layout.component';
+import { SuccessStoriesComponent } from './success-stories/success-stories.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,7 @@ const routes: Routes = [
    } ];
 
 @NgModule({
-  declarations: [LayoutComponent,HeaderComponent,FooterComponent,AboutComponent,ContactComponent],
+  declarations: [LayoutComponent,HeaderComponent,FooterComponent,AboutComponent,ContactComponent, SuccessStoriesComponent],
   imports: [
     CommonModule,RouterModule.forChild(routes)
   ]
