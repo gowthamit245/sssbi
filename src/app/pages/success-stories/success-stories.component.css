@@ -56,6 +56,7 @@
     margin-bottom: 0;
     /* background: black; */
     opacity: 1;
+    position: relative;
   }
   
   .gallery-block.compact-gallery .item .image{
@@ -77,14 +78,14 @@
       font-size: 17px;
       line-height: 18px;
       width: 100%;
-      padding-top: 15px;
+      padding-top: 25px;
       padding-bottom: 15px;
       opacity: 1;
       color: #fff;
       transition: 0.8s ease;
       text-align: center;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+      background: linear-gradient(to bottom, transparent, rgba(35, 13, 103, 0.72));
   }
   
   .gallery-block.compact-gallery .item .description .description-heading{
