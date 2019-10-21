@@ -64,3 +64,17 @@
         60%  { transform: translate(0, 15px); }
         to   { transform: translate(0, -0px); }    
     }
+    .animate-zoom {
+        animation:animatezoom 0.6s
+    }
+    @keyframes animatezoom{
+        from{transform:scale(0)}
+         to{transform:scale(1)}
+    }
+    .animate-right{
+        position:relative;animation:animateright 1.6s
+    }
+    @keyframes animateright{
+        from{right:-300px;opacity:0}
+         to{right:0;opacity:1}
+    }

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./success-stories.component.css']
 })
 export class SuccessStoriesComponent implements OnInit {
-
+  showDivList : string = 'v_associations';
   constructor() { }
 
   ngOnInit() {
   }
-
+  succStoriesBox(val){
+    this.showDivList = val;
+  }
 }
