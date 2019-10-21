@@ -3,19 +3,17 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { Routes, RouterModule } from '@angular/router';
-import { HeaderComponent} from '../shared/header/header.component';
-import { FooterComponent} from '../shared/footer/footer.component';
 
 const routes: Routes = [
   {
     path:'', component: LayoutComponent,
     children:[
-      {path: '', component: HomeComponent}
+      {path: '', component: HomeComponent, data: { pagename: 'Home' }}
     ]
    } ];
 
 @NgModule({
-  declarations: [HomeComponent,LayoutComponent,HeaderComponent,FooterComponent],
+  declarations: [LayoutComponent,HomeComponent],
   imports: [
     CommonModule, RouterModule.forChild(routes)
   ]
