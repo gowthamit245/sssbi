@@ -30,7 +30,7 @@
 }
 .icon-bar1, .icon-bar3 {
     height: 2px;
-    width: 18px;
+    width: 24px;
     top: -16px;
 }
 .icon-bar2 {
@@ -67,8 +67,8 @@
     transition: all 100ms ease-out;
 }
 .open > .menucollapse {
-    top: 5px !important;
-    left: auto;
+    top: 2px !important;
+    left: 8px;
     -webkit-transition: all 70ms ease-out;
     -moz-transition: all 70ms ease-out;
     -ms-transition: all 70ms ease-out;
@@ -98,4 +98,71 @@
 }
 .open .icon-bar2 {
    display: none;
+}
+.openMenuList{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;    
+    display: none;
+}
+.openMenuListBox{
+    background-color: #ff1d0d;
+    height: 100%;
+}
+.dnf-digital-capabilities{
+background: #df9926 url(../assets/images/digital-capabilities-menu.png) no-repeat scroll -150px 65px;
+}
+.automate {
+    height: 100vh;
+    background-repeat: no-repeat !important;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    color: #fff;
+    padding-top: 25px;
+}
+.dnf-digital-operating {
+    background: #0f9ffa url(../assets/images/digital-operating-models-menu.png) no-repeat scroll -20px 65px;
+}
+.dnf-talent-transformations{
+    background: #963596 url(../assets/images/talent-transformations-menu.png) no-repeat scroll 0 65px;
+}
+.menuItems {
+    background-color: #fff;
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    padding: 35px;
+}
+.burger.open {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.burger {
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    cursor: pointer;
+}
+.menuItems ul li a {
+    color: #444;
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+}
+.open{
+    display: block;
+}
+.close{
+    display: none;
 }

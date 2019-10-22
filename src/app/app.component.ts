@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sssbi-dev';
+  menu = "close";
+  OpenMenuModel(){
+    if(this.menu == 'close'){
+      this.menu = 'open';
+    }else{
+      this.menu = 'close';
+    }
+  }
 }
