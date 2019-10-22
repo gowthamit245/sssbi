@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:900&display=swap');
+
+body{
+    overflow: hidden;
+}
 .btn-style-two {
     padding: 19px 40px;
     position: relative;
