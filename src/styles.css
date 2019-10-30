@@ -78,3 +78,78 @@
         from{right:-300px;opacity:0}
          to{right:0;opacity:1}
     }
+    .w3-animate-top{
+        position:relative;
+        animation:animatetop 0.4s
+    }
+    @keyframes animatetop{
+        from{top:-300px;opacity:0}
+         to{top:0;opacity:1}
+        }
+
+/* Animation images */
+
+        .img-shape1 {
+            position: relative;
+            /* z-index: -1; */
+            top: 15%;
+            right: 10%;
+        }
+        .rotateme {
+            -webkit-animation-name: rotateme;
+            animation-name: rotateme;
+            -webkit-animation-duration: 50s;
+            animation-duration: 50s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+          }
+          
+          @keyframes rotateme {
+            from {
+              -webkit-transform: rotate(0deg);
+                      transform: rotate(0deg);
+            }
+            to {
+              -webkit-transform: rotate(360deg);
+                      transform: rotate(360deg);
+            }
+          }
+          .img-shape2 {
+            position: absolute;
+            left: 25%;
+            top: 15%;
+            z-index: -1;
+            -webkit-animation: animationFramesOne 20s infinite linear;
+            animation: animationFramesOne 20s infinite linear;
+        }
+        
+@keyframes animationFramesOne {
+    0% {
+      -webkit-transform: translate(0px, 0px) rotate(0deg);
+              transform: translate(0px, 0px) rotate(0deg);
+    }
+    20% {
+      -webkit-transform: translate(73px, -1px) rotate(36deg);
+              transform: translate(73px, -1px) rotate(36deg);
+    }
+    40% {
+      -webkit-transform: translate(141px, 72px) rotate(72deg);
+              transform: translate(141px, 72px) rotate(72deg);
+    }
+    60% {
+      -webkit-transform: translate(83px, 122px) rotate(108deg);
+              transform: translate(83px, 122px) rotate(108deg);
+    }
+    80% {
+      -webkit-transform: translate(-40px, 72px) rotate(144deg);
+              transform: translate(-40px, 72px) rotate(144deg);
+    }
+    100% {
+      -webkit-transform: translate(0px, 0px) rotate(0deg);
+              transform: translate(0px, 0px) rotate(0deg);
+    }
+  }
+
+        
