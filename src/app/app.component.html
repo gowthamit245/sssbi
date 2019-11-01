@@ -4,18 +4,88 @@
             <div class="col-auto">
                 <a class="d-inline-block"  routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/logo.png"></a>
             </div>
+            <div class="col-auto ml-auto">
+                <div class="row align-content-center h-100">
+                    <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white"  
+                    routerLink="/about" routerLinkActive="active">About Us</a>
+                    <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
+                    routerLink="/contact" routerLinkActive="active">Contact Us</a>
+                </div>
+            </div>
             <div class="col-auto">
                 <div class="row align-content-center h-100">
-                    <a class="d-inline-block pt-2 pr-3 text-decoration-none text-white"  
-                    routerLink="/about" routerLinkActive="active">About Us</a>
-                    <a class="d-inline-block pt-2 pr-3 text-decoration-none text-white" 
-                    routerLink="/contact" routerLinkActive="active">Contact Us</a>
-                    <a class="d-inline-block text-decoration-none text-white Menu-lines position-relative"  >
+                    <a (click)="OpenMenuModel()" class="d-inline-block text-decoration-none {{menu}} text-white Menu-lines "  >
                         <span class="icon-bar1 menucollapse rotate30 rotate45"></span>
                         <span class="icon-bar2 menucollapse"></span>
                         <span class="icon-bar3 menucollapse rotate150 rotate135"></span>
                     </a>
                 </div>
+                <section class="openMenuList {{menu}}">
+                    <div class="container-fluid openMenuListBox">
+                        <div class="row justify-content-between">
+                            <div class="col-9 dnf-info">
+                                <div class="row">
+                                    <div class="col-4 automate dnf-digital-capabilities">
+                                        <div class="row">
+                                            Box1
+                                        </div>
+                                    </div>
+                                    <div class="col-4 automate dnf-digital-operating">
+                                        <div class="row">
+                                            Box2
+                                        </div>
+                                    </div>
+                                    <div class="col-4 automate dnf-talent-transformations">
+                                        <div class="row">
+                                            Box3
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9 d-none dnf-info-box1">
+                                    <div class="row">
+                                        <div class="col-4 automate ">
+                                            <div class="row">
+                                                Box1
+                                            </div>
+                                        </div>
+                                        <div class="col-4 automate ">
+                                            <div class="row">
+                                                Box2
+                                            </div>
+                                        </div>
+                                        <div class="col-4 automate  ">
+                                            <div class="row">
+                                                Box3
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="col-3 menuItems">
+                                <div class="row">
+                                    <ul class="list-unstyled ml-3 mt-3">
+                                        
+                                        <li title="Services"><a title="Services" class="services" routerLink="/services" routerLinkActive="active">Industries
+                                            <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+                                            
+                                        <li title="Services"><a title="Services" class="services" routerLink="/services" routerLinkActive="active">Platforms
+                                            <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+                
+                                        <li title="Services"><a title="Services" class="services" routerLink="/services" routerLinkActive="active">Services
+                                            <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+                                        
+                                        <li title="About Us"><a title="About Us" class="about-txt" routerLink="/about" routerLinkActive="active">About Us
+                                            <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+                                    
+                                        <li title="Contact Us"><a title="Contact Us" routerLink="/contact" routerLinkActive="active">Contact Us
+                                        <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <div class="circle  {{menu=='open'?'expand':''}} "></div> -->
             </div>
         </div>
     </div>

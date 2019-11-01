@@ -5,6 +5,7 @@
     z-index: 2;
     width: 100%;
     height: 100px;
+    overflow: hidden;
 }
 .logo{
     width: 720px;
@@ -15,6 +16,8 @@
     height: 40px;
     border-radius: 32px;
     text-align: center;
+    z-index: 7;
+    position: relative;
 }
 .icon-bar1, .icon-bar2, .icon-bar3 {
     position: absolute;
@@ -31,7 +34,7 @@
 }
 .icon-bar1, .icon-bar3 {
     height: 2px;
-    width: 18px;
+    width: 24px;
     top: -16px;
 }
 .icon-bar2 {
@@ -68,8 +71,8 @@
     transition: all 100ms ease-out;
 }
 .open > .menucollapse {
-    top: 5px !important;
-    left: auto;
+    top: 2px !important;
+    left: 8px;
     -webkit-transition: all 70ms ease-out;
     -moz-transition: all 70ms ease-out;
     -ms-transition: all 70ms ease-out;
@@ -100,7 +103,6 @@
 .open .icon-bar2 {
    display: none;
 }
-
 
 
 /* footer styles */
@@ -398,11 +400,11 @@ section .section-title {
     -ms-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
     -o-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
     transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-    }
-    .menuItems ul li a:hover .un-line {
+}
+.menuItems ul li a:hover .un-line {
     width: 90%; 
-    }
-    .circle {
+}
+.circle {
     border-radius: 50%;
     width: 0px;
     height: 0px;
@@ -416,8 +418,8 @@ section .section-title {
     -ms-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
     -o-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
     transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-    }
-    .circle.expand {
+}
+.circle.expand {
     width: 150%;
     height: 2000px;
     overflow: hidden;
@@ -428,13 +430,13 @@ section .section-title {
     -ms-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
     -o-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
     transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
-    }
-    .openMenuList {
+}
+.openMenuList {
     opacity: 0;
-    transition: opacity 300ms ease-in-out;
-    -moz-transition: opacity 300ms ease-in-out;
-    -webkit-transition: opacity 300ms ease-in-out;
-    }
-    .openMenuList.open{
+   transition: opacity 300ms ease-in-out;
+   -moz-transition: opacity 300ms ease-in-out;
+   -webkit-transition: opacity 300ms ease-in-out;
+}
+.openMenuList.open{
     opacity: 1;
-    }
+}
