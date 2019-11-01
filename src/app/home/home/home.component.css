@@ -1,3 +1,4 @@
+
 .banner-sec{
     width: 100%;
     height: 100%;
@@ -529,6 +530,12 @@ styles for about us  */
     z-index: -2;
 } */
 /* srtles for rotate a circle */
+.centers{
+    width: 450px;
+    height: 520px;
+    /* align-items: center; */
+    margin-right: 64px;
+}
 .circle_rotate{
     height: 535px;
     position: relative;
@@ -600,7 +607,7 @@ styles for about us  */
   } */
   .shape1 {
     position: absolute;
-    top: -15%;
+    /* top: -15%; */
     z-index:0;
     left: 30px;
     -webkit-animation: rotate3d 4s linear infinite;
@@ -714,3 +721,70 @@ styles for about us  */
     .our-services-block-heading{
         margin-left: 38em;
     }
+
+
+
+
+
+    .hover-shape-1 {
+        left: 0px;
+        top: 20px;
+    }
+    .hover-shape {
+        width: 20px;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+        transform: rotate(260deg);
+        transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    }
+    .service-box-1:hover .hover-shape-1{
+        left: -48px;
+        top: 20px;
+        opacity: 1;
+    }
+    .service-box-1:hover .hover-shape-2{
+        right: 29%;
+        top: -45px;
+        opacity: 1;
+        /* transform: rotate(0deg); */
+    }
+    .service-box-1:hover .hover-shape-3{
+        right: -27px;
+        bottom: 35%;
+        opacity: 1;
+    }
+    .service-box-1:hover .hover-shape-4{
+        right: 30%;
+        bottom: -60px;
+        opacity: 1;
+    }
+    .service-box-1:hover .hover-shape-5{
+        left: -35px;
+        bottom: 30%;
+        opacity: 1;
+    }
+    /* .hover-shape:hover {
+       
+        opacity: 1;
+    } */
+    .hover-shape-2 {
+        right: 29%;
+        top: 0px;
+    }
+    .hover-shape-3 {
+        right: 0px;
+        bottom: 35%;
+    }
+    .hover-shape-4 {
+        right: 30%;
+        bottom: 0px;
+    }
+    .hover-shape-5 {
+        left: 0px;
+        bottom: 30%;
+    }
+
+    

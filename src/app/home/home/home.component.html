@@ -1,13 +1,20 @@
+
 <section>
     <div class="container-fluid">
         <div class="row">
             <div class=" col-12  background-video position-relative">
                 <div class="row ">
-                    <video class="col-12  p-0 " preload="none" playsinline autoplay muted loop >
-                        <source src="assets/videos/web-videos-1.mp4" type="video/mp4">
+                        <!-- <video autoplay muted loop>
+                                <source type="video/mp4"  src="assets/videos/web-videos-1.mp4">
+                        </video> -->
+                        <video class="col-12  p-0 " loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+                                <source src="assets/videos/web-videos-1.mp4" type="video/mp4">
+                        </video>
+                    <!-- <video class="col-12  p-0 " preload="none" playsinline autoplay muted loop >
+                        <source src="assets/videos/web-videos-1.mp4" type="video/mp4"> -->
                         <!-- <source src="assets/videos/web-videos-1.webm" type="video/webm">
                         <source src="assets/videos/web-videos-1" type="video/ogg"> -->
-                    </video>
+                    <!-- </video> -->
                 </div>
             </div> 
 
@@ -40,7 +47,7 @@
                     <div class="col-6">
                         <div class="col-12">
                             <div class="row justify-content-center align-content-center circle_rotate">
-                                <img src="assets/images/image-home.png" >
+                                <img src="assets/images/sample-2.png" class="centers" >
                             </div>
                         </div>
                     </div>
@@ -116,6 +123,15 @@
 <!-- section for about company -->
 <section class="mt-5">
         <div class="container about-us-block-div-banner">
+                <div class="row">
+                        <div class="shape1">
+                            <img src="assets/images/shap-1.png">
+                        </div>
+                        <div class="shape2">
+                            <img src="assets/images/shap-2.png">
+                        </div>
+                </div>
+
             <div class="row ">
                 <div class="col-12 our-service-sec py-5">
                         <h2 class=" h2 display-5 text-center">About Us</h2>
@@ -125,9 +141,10 @@
             </div>
             <div class="row">
                 <div class="col-12">
+                        
                     <div class="row">
                         <div class="col-lg-3 col-sm-4  about-us-block-div">
-                            <div class=" about-us-block  animate-left floating"> 
+                            <div class=" about-us-block  animate-left "> 
                                     <div class=" p-3">
                                             <span class="about-icon-container grad-style-cd-light  about-icon-1 offset-3 mb-3">
                                                     <i class="fa fa-line-chart fa-4x align-content-between icon-style" aria-hidden="true"></i>
@@ -142,7 +159,7 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-4 ">
-                                <div class="well well-sm about-us-block animate-left floating"> 
+                                <div class="well well-sm about-us-block animate-left "> 
                                         <div class=" p-3">
                                                 <span class="about-icon-container grad-style-cd-light about-icon-2 offset-3 mb-3">
                                                         <i class="fa fa-globe fa-4x align-content-between icon-style" aria-hidden="true"></i>
@@ -157,7 +174,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-4">
-                                    <div class="well well-sm about-us-block animate-left floating"> 
+                                    <div class="well well-sm about-us-block animate-left "> 
                                             <div class=" p-3">
                                                     <span class="about-icon-container grad-style-cd-light about-icon-3 offset-3 mb-3">
                                                             <i class="fa fa-thumbs-o-up fa-4x align-content-between icon-style" aria-hidden="true"></i>
@@ -172,7 +189,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-sm-4">
-                                        <div class="well well-sm about-us-block animate-left floating"> 
+                                        <div class="well well-sm about-us-block animate-left "> 
                                                 <div class=" p-3">
                                                         <span class="about-icon-container grad-style-cd-light about-icon-4 offset-3 mb-3">
                                                                 <i class="fa fa-star-half-o fa-4x align-content-between icon-style" aria-hidden="true"></i>
@@ -186,8 +203,15 @@
                                                 </div>
                                         </div>
                                     </div>
+                                   
                     </div>
                 </div>
+            </div>
+            <div class="img-shape1 rotateme">
+                    <img src="assets/images/s1.JPG">
+            </div>
+            <div class="img-shape2 ">
+                    <img src="assets/images/s2.JPG">
             </div>
         </div>
 </section>
@@ -215,10 +239,10 @@
                     <div class="row mt-5">
                         <div class="col-12 boxTech {{techScrollView}}">
                             <div class="tech-1 techview">
-                                <img src="assets/tech-img/tech-3.jpg" class="w-100 d-inline-block" alt="tech1"/>
+                                <img src="assets/images/150_150.png" class="w-100 d-inline-block" alt="tech1"/>
                             </div>
                             <div class="tech-2 techview">
-                                <img src="assets/tech-img/tech-2.jpg" class="w-100 d-inline-block" alt="tech1"/>
+                                <img src="assets/images/100_100.png" class="w-100 d-inline-block" alt="tech1"/>
                             </div>
                             <div class="tech-3 techview">
                                 <img src="assets/tech-img/tech-1.jpg" class="w-100 d-inline-block" alt="tech1"/>
@@ -303,6 +327,11 @@
                         <div>
                             <p class="text-center">SSS-Trusted World class Business Intelligence Solutions  Provider is ideal for companies and departments in all industries that are business intelligence solution  </p>
                         </div>
+                        <img src="assets/images/s1.JPG" class="hover-shape-1 hover-shape">
+                        <img src="assets/images/s2.JPG" class="hover-shape-2 hover-shape">
+                        <img src="assets/images/s3.JPG" class="hover-shape-3 hover-shape">
+                        <img src="assets/images/s4.JPG" class="hover-shape-4 hover-shape">
+                        <img src="assets/images/s3.JPG" class="hover-shape-5 hover-shape">
                 </div>
                 <div class="col-lg-3 content-block col-md-4 m-b-30 service-box-1 p-4 ml-4">
                     <div class="mb-4 p-3">
@@ -316,6 +345,11 @@
                     <div>
                         <p class="text-center">SSS Business Analytics services  that gives you smart new ways to see the indications in your data. Do your own visual analysis to find new patterns at a glance</p>
                     </div>
+                    <img src="assets/images/s1.JPG" class="hover-shape-1 hover-shape">
+                    <img src="assets/images/s2.JPG" class="hover-shape-2 hover-shape">
+                    <img src="assets/images/s3.JPG" class="hover-shape-3 hover-shape">
+                    <img src="assets/images/s4.JPG" class="hover-shape-4 hover-shape">
+                    <img src="assets/images/s3.JPG" class="hover-shape-5 hover-shape">
                 </div>
                 <div class="col-lg-3 content-block col-md-4 m-b-30 service-box-1 p-4 ml-4">
                     <div class="mb-4 p-3">
@@ -329,6 +363,11 @@
                     <div>
                         <p class="text-center">SSS, A Leader in Big Data Innovation provide most rapid, high performing and accurate need based Big Data Analytics solutions to clients </p>
                     </div>
+                    <img src="assets/images/s1.JPG" class="hover-shape-1 hover-shape">
+                    <img src="assets/images/s2.JPG" class="hover-shape-2 hover-shape">
+                    <img src="assets/images/s3.JPG" class="hover-shape-3 hover-shape">
+                    <img src="assets/images/s4.JPG" class="hover-shape-4 hover-shape">
+                    <img src="assets/images/s3.JPG" class="hover-shape-5 hover-shape">
                 </div>
         </div>
         <div class="row justify-content-center mt-5">
@@ -344,6 +383,11 @@
                     <div>
                         <p class="text-center">SSS Offers complete IoT solutions for all major processes, Services, Things, People and industries. Become a next big wave in emerging  innovation With SSS</p>
                     </div>
+                    <img src="assets/images/s1.JPG" class="hover-shape-1 hover-shape">
+                    <img src="assets/images/s2.JPG" class="hover-shape-2 hover-shape">
+                    <img src="assets/images/s3.JPG" class="hover-shape-3 hover-shape">
+                    <img src="assets/images/s4.JPG" class="hover-shape-4 hover-shape">
+                    <img src="assets/images/s3.JPG" class="hover-shape-5 hover-shape">
             </div>
             <div class="col-lg-3 content-block col-md-4 m-b-30 service-box-1 p-4 ml-4">
                 <div class="mb-4 p-3">
@@ -357,6 +401,11 @@
                 <div>
                     <p class="text-center">Srinivasan Software Solutions, A Technology Leader in Web Interface Development, is one stop destination for all your Technological needs</p>
                 </div>
+                <img src="assets/images/s1.JPG" class="hover-shape-1 hover-shape">
+                <img src="assets/images/s2.JPG" class="hover-shape-2 hover-shape">
+                <img src="assets/images/s3.JPG" class="hover-shape-3 hover-shape">
+                <img src="assets/images/s4.JPG" class="hover-shape-4 hover-shape">
+                <img src="assets/images/s3.JPG" class="hover-shape-5 hover-shape">
             </div>
             <div class="col-lg-3 content-block col-md-4 m-b-30 service-box-1 p-4 ml-4">
                 <div class="mb-4 p-3">
@@ -370,6 +419,11 @@
                 <div>
                     <p class="text-center">SSS Digital Marketing Agency was built on the foundation of driving measurable results that allowed us to provide the quality services in all facets of Digital Marketing</p>
                 </div>
+                <img src="assets/images/s1.JPG" class="hover-shape-1 hover-shape">
+                <img src="assets/images/s2.JPG" class="hover-shape-2 hover-shape">
+                <img src="assets/images/s3.JPG" class="hover-shape-3 hover-shape">
+                <img src="assets/images/s4.JPG" class="hover-shape-4 hover-shape">
+                <img src="assets/images/s3.JPG" class="hover-shape-5 hover-shape">
             </div>
     </div>
     </div>
@@ -485,6 +539,8 @@
             <div class="row">
                 <div class="col-12 trusted-clients-heading">
                     <h4 class="text-danger h4 text-center  m-3  font-weight-bold">Trusted Clients</h4>
+                    <!-- <div class="bar position-relative text-center our-services-block-heading ">
+                    </div> -->
                 </div>
             </div>
             <div class="row text-center text-lg-left mt-5">

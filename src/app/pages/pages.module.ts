@@ -6,6 +6,16 @@ import { ContactComponent } from '../pages/contact/contact.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SuccessStoriesComponent } from './success-stories/success-stories.component';
 import { ServicesComponent } from './services/services.component';
+import { BiSolutionsComponent } from './bi-solutions/bi-solutions.component';
+import { BusinessAnalyticsComponent } from './business-analytics/business-analytics.component';
+import { BigDataComponent } from './big-data/big-data.component';
+import { IotComponent } from './iot/iot.component';
+import { StaffingServicesComponent } from './staffing-services/staffing-services.component';
+import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
+import { ItOutsourceComponent } from './it-outsource/it-outsource.component';
+import { WebInterfaceComponent } from './web-interface/web-interface.component';
+import { JiraComponent } from './jira/jira.component';
+import { DataScienceComponent } from './data-science/data-science.component';
 
 const routes: Routes = [
   {
@@ -14,14 +24,24 @@ const routes: Routes = [
       {path: 'about', component: AboutComponent, data: { pagename: 'AboutUs' }},
       {path: 'contact', component: ContactComponent, data: { pagename: 'ConactUs' }} ,
       {path: 'success-stories', component: SuccessStoriesComponent},
-      {path: 'services', component: ServicesComponent}
+      {path: 'services', component: ServicesComponent},
+      {path: 'bi-solutions', component: BiSolutionsComponent},
+      {path: 'business-analytics', component: BusinessAnalyticsComponent},
+      {path: 'big-data', component: BigDataComponent},
+      {path: 'iot', component: IotComponent},
+      {path: 'staffing-services', component: StaffingServicesComponent},
+      {path: 'digital-marketing', component: DigitalMarketingComponent},
+      {path: 'it-outsource', component: ItOutsourceComponent},
+      {path: 'web-interface', component: WebInterfaceComponent},
+      {path: 'jira', component: JiraComponent},
+      {path: 'data-science', component: DataScienceComponent}
 
 
     ]
    } ];
 
 @NgModule({
-  declarations: [LayoutComponent,AboutComponent,ContactComponent, SuccessStoriesComponent, ServicesComponent],
+  declarations: [LayoutComponent,AboutComponent,ContactComponent, SuccessStoriesComponent, ServicesComponent, BiSolutionsComponent, BusinessAnalyticsComponent, BigDataComponent, IotComponent, StaffingServicesComponent, DigitalMarketingComponent, ItOutsourceComponent, WebInterfaceComponent, JiraComponent, DataScienceComponent],
   imports: [
     CommonModule,RouterModule.forChild(routes)
   ]

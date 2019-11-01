@@ -1,0 +1,290 @@
+.banner-image img{
+    width: 100%;
+      height: 550px;
+  }
+  .bi-solutions{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+  .bi-solutions-text h3{
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+    color: #eb1111f5;
+  }
+  .bi-solutions-text p{
+    color: #8996a6;
+    line-height: 2rem;
+  }
+  .bi-process-image img{
+    width: 100%;
+      height: auto;
+  }
+  .img-icon{
+    position: absolute;
+    left: -80px;
+    top: 0;
+    width: 130px;
+    height: 130px;
+}
+.ctext-color{
+    color:#ec1a1a;
+}
+.icon-box{
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70px;
+    height: 70px;
+    margin: -35px 0 0 -35px;
+    border-radius: 50%;
+    background: #07f;
+    background: -webkit-linear-gradient(left, #07f 0, #80ceff 100%);
+    background: linear-gradient(to right, #07f 0, #80ceff 100%);
+    box-shadow: 0 9px 29px 0 rgba(60, 159, 255, .25);
+}
+.icon-color{
+    /* background: linear-gradient(to bottom, #8a3fff 0, #8590ff 100%); */
+    background: linear-gradient(to bottom, #ffc000 0, #ff7247 100%);
+    box-shadow: 0 9px 29px 0 rgba(255, 129, 58, .25);
+}
+.icon-box span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+}
+i{
+    font-size: 31px;
+    position: relative;
+    text-align: center;
+    left: 8px;
+    top: 11px;
+    color: white;
+}
+.cfont{
+    font-size: 48px;
+    top: 2px;
+}
+.animate-right i{
+    font-size: 31px;
+    position: relative;
+    text-align: center;
+    left: 13px;
+    top: 11px;
+    color: white;
+}
+.sec2 .animate-ball>div{
+    border: 1px solid #ffc000;
+}
+.animate-ball>div {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    border: 1px solid #99d1ff;
+    -webkit-animation: animate-ball 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8);
+    animation: animate-ball 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8)
+}
+.border-right{
+    /* position: absolute;
+    top: 0;
+    right: -1px;
+    height: 100%;
+    width: 1px;
+    background: #eeeded; */
+    border-right: dotted black;
+}
+
+.animate-ball {
+    position: relative
+}
+.dots-image{
+    position: relative;
+    left: -30px;
+    height: 138px;
+    width: 1px;
+    top: 5px;
+}
+.dots-image-left{
+    position: relative;
+    height: 138px;
+    width: 1px;
+    top: 128px;
+    right: 29px;
+}
+.rightborder{
+    position: absolute;
+    left: -20px;
+    top: 12px;
+    bottom: 8px;
+    width: 2px;
+    background-color: #3fa1ff;
+}
+.leftborder{
+    position: absolute;
+    right: 10px;
+    left: auto;
+    top: 23px;
+    bottom: 8px;
+    width: 2px;
+    background-color: #ff7247;
+}
+.cleft{
+    left: 14px;
+  
+}
+.title-center{
+    top: 52px;
+    left: 140px;
+    position: relative;
+}
+.rtitle-center{
+    top: 65px;
+    left: 140px;
+    position: relative;
+}
+.icon-box span{
+    /* background-image: url("../../assets/images/basketsnodejs_icons_.png"); */
+    background-size: 50px 300px;
+    background-position: 0 -202px;
+
+}
+.animate-left{
+    position:relative;
+    animation:animate-left 1.5s ease-in ;  
+}
+.animate-right{
+    position:relative;
+    animation:animate-right 1.5s ease ;  
+}
+@keyframes animate-right{
+    
+    from{right:-300px;opacity:0} to{right:0;opacity:1}
+
+}
+@keyframes animate-left{
+    
+    from{left:-300px;opacity:0} to{left:0;opacity:1}
+
+}
+.animate-ball>div:nth-child(0) {
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s
+}
+
+.animate-ball>div:nth-child(1) {
+    -webkit-animation-delay: -.6s;
+    animation-delay: -.6s
+}
+
+.animate-ball>div:nth-child(2) {
+    -webkit-animation-delay: -.4s;
+    animation-delay: -.4s
+}
+
+.animate-ball>div:nth-child(3) {
+    -webkit-animation-delay: -.2s;
+    animation-delay: -.2s
+}
+
+@-webkit-keyframes animate-ball {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 1
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .7
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes animate-ball {
+    0% {
+        -webkit-transform: scale(.1);
+        transform: scale(.1);
+        opacity: 1
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: .7
+    }
+    100% {
+        opacity: 0
+    }
+}
+.empower-tool-text p{
+    color: #8996a6;
+}
+.empower-tool-main-heading h5{
+    color: #1e2bc2;
+}
+.list-points .list-points-div .list-image-bk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 31px;
+    background: url(../../../assets/images/image-tick.png) no-repeat;
+    background-size: 30px 154px;
+    
+}
+.list-points .list-points-div .list-image-1{
+    background-position: 0 0;
+}
+.list-points .list-points-div .list-image-2{
+    background-position: 0 -31px;
+}
+.list-points .list-points-div .list-image-3{
+    background-position: 0 -62px;
+}
+.list-points .list-points-div .list-image-4{
+    background-position: 0 -124px;
+}
+.list-points .list-points-div .list-image-5{
+    background-position: 0 -31px;
+}
+.list-points .list-points-div .list-image-6{
+    background-position: 0 -93px;
+}
+
+.list-points .list-points-div  {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    font-size: 16px;
+    color: #000;
+    padding-left: 40px;
+}
+
+.list-points-bi-image img{
+    height: auto;
+    width: 100%;
+}
+.advanced-tech{
+    background-color: #f7fafd;
+  }
+  .top-technology{
+    margin-left:6.1em;
+}
+.top-technology h4
+{
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+    color: #eb1111f5;
+    font-size: 34px;
+}
+.top-technology p
+{
+    color: #8996a6;
+    font-weight: 400;
+    font-family: "Hind Vadodara", sans-serif;
+    line-height: 2rem;
+}

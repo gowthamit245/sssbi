@@ -1,4 +1,4 @@
-<header class="headerSec">
+<!-- <header class="headerSec">
     <div class="container-fluid headerSecBox">
         <div class="row px-5 py-3 justify-content-between">
             <div class="col-auto">
@@ -89,6 +89,187 @@
             </div>
         </div>
     </div>
-</header>
-
+</header> -->
+<header class="headerSec">
+        <div class="container-fluid headerSecBox">
+        <div class="row px-5 py-3 justify-content-between">
+        <div class="col-auto">
+        <a class="d-inline-block" routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/logo.png"></a>
+        </div>
+        <div class="col-auto ml-auto">
+        <div class="row align-content-center h-100">
+        <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
+        routerLink="/about" routerLinkActive="active">About Us</a>
+        <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
+        routerLink="/contact" routerLinkActive="active">Contact Us</a>
+        </div>
+        </div>
+        <div class="col-auto">
+        <div class="row align-content-center h-100">
+        <a (click)="OpenMenuModel()" class="d-inline-block text-decoration-none {{menu}} text-white Menu-lines " >
+        <span class="icon-bar1 menucollapse rotate30 rotate45"></span>
+        <span class="icon-bar2 menucollapse"></span>
+        <span class="icon-bar3 menucollapse rotate150 rotate135"></span>
+        </a>
+        </div>
+        <section class="openMenuList {{menu}}">
+        <div class="container-fluid openMenuListBox">
+        <div class="row justify-content-between">
+        <div class="col-9 dnf-info ">
+        <div class="row">
+        <div class="col-4 automate dnf-digital-capabilities">
+        <div class="row">
+        Box1
+        </div>
+        </div>
+        <div class="col-4 automate dnf-digital-operating">
+        <div class="row">
+        Box2
+        </div>
+        </div>
+        <div class="col-4 automate dnf-talent-transformations">
+        <div class="row">
+        Box3
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-9 service-sub-menu {{showservices}} py-5 ">
+        <div class="row">
+        <div class="col-12 ">
+        <h2 class="text-white">Services</h2>
+        <div class="row text-white py-3">
+        <div class="col-12 col-md-4 col-lg-4 cfont">
+        <div><a title="Services" class="text-white pb-2" (click)="Hide()" routerLink="/bi-solutions" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>BI Solutions</a></div>
+        <div><a title="Services" (click)="Hide()" class="text-white" routerLink="/business-analytics" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>Business Analytics</a></div>
+        <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/big-data" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>Big Data</a></div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 cfont">
+        <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/iot" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>IoT</a></div>
+        <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/web-interface" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>Web Interface</a></div>
+        <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/digital-marketing" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>Digital Marketing</a></div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 cfont">
+        <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/data-science" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>Data Science</a></div>
+        <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/it-outsource" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>IT OutSourcing</a></div>
+        <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/jira" routerLinkActive="active">
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span>JIRA</a></div>
+        </div> 
+        <div></div>
+        </div>
+        </div>
+        
+        </div>
+        </div>
+        <div class="col-3 menuItems">
+        <div class="row">
+        <ul class="list-unstyled ml-3 mt-3">
+        
+        <li title="Home" (click)="Hide()" (mouseenter)="DisplayServicesList('Industries')" ><a title="Home" class="services" routerLink="/" routerLinkActive="active">Home
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+        
+        <li title="About Us" (click)="Hide()" (mouseenter)="DisplayServicesList('Platforms')" ><a title="About Us" class="services" routerLink="/about" routerLinkActive="active">About Us
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+        
+        <li title="Services" (click)="Hide()" (mouseenter)="DisplayServicesList('Services')" ><a title="Services" class="services" routerLink="/services" routerLinkActive="active">Services
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+        
+        <li title="Success Stories" (click)="Hide()"><a title="Success Stories" class="about-txt" routerLink="/success-stories" routerLinkActive="active">Success Stories
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+        
+        <li title="Contact Us" (click)="Hide()" (mouseenter)="DisplayServicesList('Contactus')" ><a title="Contact Us" routerLink="/contact" routerLinkActive="active">Contact Us
+        <span class="un-line hidden-sm hidden-xs hidden-tab"></span></a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        
+        </div>
+        </div>
+        </div>
+        </header>
 <router-outlet></router-outlet>
+<footer id="footer">
+    <div class="container">
+        <div class="row py-5">
+                <div class="col-auto footer-logo">
+                        <a class="d-inline-block"  routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/white _stroketitle_03.png"></a>
+                </div>
+        </div>
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5> CONTACT INFO</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>India Address Headquarters:</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>18-1-49, 1st Floor, Star Plaza, K.T.Road,<br>&nbsp;&nbsp;
+                        Tirupati, Andhra Pradesh, India.</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>(+91) 0877-2233733, 720 721 3437</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>info@sssbi.com</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-xs-12 col-sm-4 col-md-5">
+                <!-- <h5>Quick links</h5> -->
+                <ul class="list-unstyled quick-links mt-5">
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>US Address</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>16777,SW 36th Street, Miramar FL 33027 USA,</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>(+1) 510 493 2202 / 714 388 6646</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>bdm@sssbi.com</a></li>
+                    <!-- <li><a href=""><i class="fa fa-angle-double-right"></i>Contact Us</a></li> -->
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Services</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Success Stories</a></li>
+                    <!-- <li><a href="" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <div class="row ">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white ">
+                <!-- <p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p> -->
+               
+            </div>
+         
+        </div>	
+    </div>
+    <section>
+            <div class="container-fluid  py-4 all-rights-main-div">
+                <div class="row">
+                   <div class="col-12">
+                        <div >
+                                <p class="h6 text-center text-white all-rights">©2019  SSS. All Rights Reserved | Terms of Use | Privacy policy<a class="text-green ml-2 text-white" href="https://www.sssbi.com/" target="_blank"><b>SSS</b></a></p>
+                        </div>
+                   </div> 
+                </div>
+            </div>
+        </section>
+</footer>
+
