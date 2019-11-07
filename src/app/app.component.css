@@ -124,7 +124,8 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background: #0e4ca1 !important;
+    /* background: #0e4ca1 !important; */
+    background: #0b2a55 !important;
 }
 #footer h5{
 	padding-left: 10px;

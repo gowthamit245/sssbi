@@ -7,13 +7,24 @@
     padding-right: 0px!important;
   }
   .about-text h3{
-    font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
-    color: #eb1111f5;
+    color: #102d88f2 !important;
+    font-size: 32px !important;
+    
+  }
+  .about-text h1{
+    /* font-weight: 400;
+    font-family: "Fira Sans", sans-serif; */
+    /* color: #080085; */
+    color: #ff1f1f !important;
+    font-size: 60px !important;
   }
   .about-text p{
-    color: #8996a6;
-    line-height: 2rem;
+    /* color: #8996a6; */
+    font-size: 18px;
+    line-height: 30px;
+    /* color: #1e3a8f; */
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
   }
 .team-section{
     background-color: #f7fafd;
@@ -424,5 +435,5 @@
     color: #9d9d9d;
 }
 .our-service-sec h2{
-    color:#2119e1;
+    color: #1e3a8f;
 }
