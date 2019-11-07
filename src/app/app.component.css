@@ -199,6 +199,15 @@ section .section-title {
     overflow: hidden;
     
     }
+    .scrollHeader-open{
+        position: fixed;
+        /* background: rgba(0, 0, 0, 0.75); */        
+    background: #001d77;
+        box-shadow: 0px 0px 3px 0px #000;
+    }
+    .headerSecBox.contactus{
+        background-color:#001d77;
+    }
     .logo{
     width: 720px;
     }
@@ -479,3 +488,4 @@ background: #df9926 url(../assets/images/m1.png);
 .openMenuList.open{
     opacity: 1;
 }
+

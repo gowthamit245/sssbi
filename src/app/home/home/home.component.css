@@ -2,6 +2,7 @@
 .banner-sec{
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(180deg, #001d77 0%, transparent 30%);
 }
 .banner-sec-text h1{
     font-weight: 700;
