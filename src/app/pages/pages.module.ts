@@ -16,6 +16,7 @@ import { ItOutsourceComponent } from './it-outsource/it-outsource.component';
 import { WebInterfaceComponent } from './web-interface/web-interface.component';
 import { JiraComponent } from './jira/jira.component';
 import { DataScienceComponent } from './data-science/data-science.component';
+import { MoreTechnologiesComponent } from './more-technologies/more-technologies.component';
 
 const routes: Routes = [
   {
@@ -34,14 +35,15 @@ const routes: Routes = [
       {path: 'it-outsource', component: ItOutsourceComponent},
       {path: 'web-interface', component: WebInterfaceComponent},
       {path: 'jira', component: JiraComponent},
-      {path: 'data-science', component: DataScienceComponent}
+      {path: 'data-science', component: DataScienceComponent},
+      {path: 'more-technologies', component: MoreTechnologiesComponent}
 
 
     ]
    } ];
 
 @NgModule({
-  declarations: [LayoutComponent,AboutComponent,ContactComponent, SuccessStoriesComponent, ServicesComponent, BiSolutionsComponent, BusinessAnalyticsComponent, BigDataComponent, IotComponent, StaffingServicesComponent, DigitalMarketingComponent, ItOutsourceComponent, WebInterfaceComponent, JiraComponent, DataScienceComponent],
+  declarations: [LayoutComponent,AboutComponent,ContactComponent, SuccessStoriesComponent, ServicesComponent, BiSolutionsComponent, BusinessAnalyticsComponent, BigDataComponent, IotComponent, StaffingServicesComponent, DigitalMarketingComponent, ItOutsourceComponent, WebInterfaceComponent, JiraComponent, DataScienceComponent, MoreTechnologiesComponent],
   imports: [
     CommonModule,RouterModule.forChild(routes)
   ]

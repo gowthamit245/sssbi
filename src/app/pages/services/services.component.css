@@ -127,7 +127,12 @@ figure.img-sec p {
     margin: 12px;
     transition: 0.5s;
     width:14%;
-    height: 178px;
+    
+}
+.image-size{
+    height: 110px;
+    overflow: hidden;
+    display: block;
 }
 .technologies img{
     max-width: 100%;
