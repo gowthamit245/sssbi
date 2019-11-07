@@ -84,28 +84,32 @@
                             </div>
                         </div>
                     </div>
-                </section>
+
+                </section>-->
                 <!-- <div class="circle  {{menu=='open'?'expand':''}} "></div> -->
-            </div>
+            <!-- </div>
+
         </div>
-    </div>
-</header> -->
+    </div> -->
+
 <header class="headerSec">
         <div class="container-fluid headerSecBox">
         <div class="row px-5 py-3 justify-content-between">
         <div class="col-auto">
-        <a class="d-inline-block" routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/logo.png"></a>
+        <a class="d-inline-block" routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/title_03.png"></a>
         </div>
         <div class="col-auto ml-auto">
         <div class="row align-content-center h-100">
         <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
         routerLink="/about" routerLinkActive="active">About Us</a>
         <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
+        routerLink="/services" routerLinkActive="active">Services</a>
+        <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
         routerLink="/contact" routerLinkActive="active">Contact Us</a>
         </div>
         </div>
         <div class="col-auto">
-        <div class="row align-content-center h-100">
+        <div class="row align-content-center h-100" >
         <a (click)="OpenMenuModel()" class="d-inline-block text-decoration-none {{menu}} text-white Menu-lines " >
         <span class="icon-bar1 menucollapse rotate30 rotate45"></span>
         <span class="icon-bar2 menucollapse"></span>
@@ -146,6 +150,8 @@
         <span class="un-line hidden-sm hidden-xs hidden-tab"></span>Business Analytics</a></div>
         <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/big-data" routerLinkActive="active">
         <span class="un-line hidden-sm hidden-xs hidden-tab"></span>Big Data</a></div>
+        <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/staffing-services" routerLinkActive="active">
+            <span class="un-line hidden-sm hidden-xs hidden-tab"></span>Staffing Services</a></div>
         </div>
         <div class="col-12 col-md-4 col-lg-4 cfont">
         <div><a title="Services" class="text-white" (click)="Hide()" routerLink="/iot" routerLinkActive="active">
@@ -198,12 +204,16 @@
         </div>
         </div>
         </header>
+
+
+
+
 <router-outlet></router-outlet>
 <footer id="footer">
     <div class="container">
         <div class="row py-5">
                 <div class="col-auto footer-logo">
-                        <a class="d-inline-block"  routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/white _stroketitle_03.png"></a>
+                        <a class="d-inline-block"  routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/title_03.png"></a>
                 </div>
         </div>
         <div class="row text-center text-xs-center text-sm-left text-md-left">
@@ -231,11 +241,11 @@
             <div class="col-xs-12 col-sm-4 col-md-3">
                 <h5>Quick links</h5>
                 <ul class="list-unstyled quick-links">
-                    <li><a href=""><i class="fa fa-angle-double-right"></i>Home</a></li>
-                    <li><a href=""><i class="fa fa-angle-double-right"></i>About</a></li>
-                    <li><a href=""><i class="fa fa-angle-double-right"></i>Services</a></li>
-                    <li><a href=""><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
-                    <li><a href=""><i class="fa fa-angle-double-right"></i>Success Stories</a></li>
+                    <li><a href="" routerLink="/"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="" routerLink="/about"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="" routerLink="/services"><i class="fa fa-angle-double-right"></i>Services</a></li>
+                    <li><a href="" routerLink="/contact"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+                    <li><a href="" routerLink="/success-stories"><i class="fa fa-angle-double-right"></i>Success Stories</a></li>
                     <!-- <li><a href="" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li> -->
                 </ul>
             </div>
@@ -261,7 +271,7 @@
         </div>	
     </div>
     <section>
-            <div class="container-fluid  py-4 all-rights-main-div">
+            <div class="container-fluid  py-2 all-rights-main-div">
                 <div class="row">
                    <div class="col-12">
                         <div >

@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
   @HostListener('window:scroll', ['$event'])
-  checkScroll() {
+  checkScroll(e) {
     const componentPosition = this.el.nativeElement.offsetTop;
     console.log(componentPosition);
     const scrollPosition = window.pageYOffset

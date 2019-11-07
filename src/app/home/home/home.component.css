@@ -51,7 +51,8 @@
     justify-content: center;
     -webkit-transform: rotate(150deg);
     -ms-transform: rotate(150deg);
-    transform: rotate(150deg);
+    /* transform: rotate(150deg); */
+    transform: rotate(-146deg);
     margin-bottom: 4.5rem;
     position: relative;
     background-image: -webkit-linear-gradient(45deg, #fff3f6, #fef5f5);
@@ -92,10 +93,60 @@
     background-image: linear-gradient(45deg, #2921a999, #ff7cb0);
     background-repeat: repeat-x;
 }
-.content-block:hover .icon-container i {
+/* .content-block:hover .icon-container-1 i {
     color:#fff;
+    background-image: url("../../../assets/images/jira-white.png");
 
+} */
+.img-color{
+    display: inline-block;
 }
+.img-nocolor{
+    display: none;
+}
+.content-block:hover .img-color{
+    display: none;
+}
+.content-block:hover .img-nocolor{
+    display: inline-block;
+   
+}
+
+/* .content-block:hover .icon-container-2 i {
+    color:#fff;
+    background-image: url("../../../assets/images/services_icons/talendo_icon_white.png");
+
+} */
+.talend-img-color{
+    display: inline-block;
+}
+.talend-img-nocolor{
+    display: none;
+}
+.content-block:hover .talend-img-color{
+    display: none;
+}
+.content-block:hover .talend-img-nocolor{
+    display: inline-block;
+}
+
+.looker-img-color{
+    display: inline-block;
+}
+.looker-img-nocolor{
+    display: none;
+}
+.content-block:hover .looker-img-color{
+    display: none;
+}
+.content-block:hover .looker-img-nocolor{
+    display: inline-block;
+}
+
+
+
+
+
 .content-block:hover .icon-container::after {
     opacity: 1;
 }
@@ -230,32 +281,32 @@ Kumar S
 }
 
 .tech-2 {
-    width: 94px;
-    height: 94px;
+    width: 111px;
+    height: 102px;
     margin-left: -47px;
     margin-top: -47px;
 }
 .boxTechView .tech-2{
     left: 20%;
-    top: 15%;
+    top: 20%;
 }
 .tech-3 {
-    width: 80px;
+    width: 96px;
     height: 80px;
     margin-left: -40px;
     margin-top: -40px;
 }
 .boxTechView .tech-3{
-    left: 45%;
-    top: 10%;
+    left: 38%;
+    top: 22%;
 }
 .boxTechView .tech-4 {
     right: 30%;
     top: 0%;
 }
 .tech-4 {
-    width: 50px;
-    height: 50px;
+    width: 99px;
+    height: 91px;
     margin-left: -25px;
     margin-top: -25px;
 }
@@ -264,13 +315,13 @@ Kumar S
     right: 50%;
     top: 50%;
     left: auto;
-    width: 72px;
-    height: 72px;
+    width: 110px;
+    height: 108px;
     margin-left: -36px;
     margin-top: -36px;
 }
 .boxTechView .tech-5{
-    right: 15%;
+    right: 6%;
     top: 14%;
 }
 
@@ -278,27 +329,29 @@ Kumar S
     right: 50%;
     top: 50%;
     left: auto;
-    width: 72px;
-    height: 72px;
+    width: 100px;
+    height: 92px;
     margin-left: -36px;
     margin-top: -36px;
 }
 
 .boxTechView .tech-6 {
-    right: 30%;
+    /* right: 30%;
+    top: 30%; */
+    right: 31%;
     top: 30%;
 }
 .tech-7{
     right: 50%;
     top: 50%;
     left: auto;
-    width: 44px;
-    height: 44px;
+    width: 87px;
+    height: 94px;
     margin-left: -22px;
     margin-top: -22px;
 }
 .boxTechView .tech-7 {
-    right: 2%;
+    right: 10%;
     top: 40%;
 }
 .tech-8{
@@ -312,10 +365,10 @@ Kumar S
     top: 48%;
 }
 .tech-9 {
-    width: 46px;
-    height: 46px;
+    width: 99px;
+    height: 94px;
     margin-top: -23px;
-    margin-left: -23px;
+    margin-left: -91px;
 }
 .boxTechView .tech-9 {
     left: 65%;
@@ -325,8 +378,10 @@ Kumar S
     right: 50%;
     top: 50%;
     left: auto;
-    width: 58px;
-    height: 58px;
+    /* width: 58px;
+    height: 58px; */
+    width: 123px;
+    height: 110px;
     margin-left: -29px;
     margin-top: -29px;
 }
@@ -355,15 +410,16 @@ Kumar E
 }
 .top-technology h4
 {
-    font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
+    /* font-weight: 400; */
+    /* font-family: "Fira Sans", sans-serif; */
     color: #eb1111f5;
     font-size: 34px;
 }
 .top-technology p
 {
-    color: #8996a6;
-    font-weight: 400;
+    /* color: #8996a6; */
+    color: #203d99;
+    font-weight: 500;
     font-family: "Hind Vadodara", sans-serif;
     line-height: 2rem;
 }
@@ -388,7 +444,7 @@ styles for about us  */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 8px 8px #c3c0d8;
-    border: 1px dashed #7352d2;
+    border: 1px solid #7352d2;
 }
 .about-us-block p{
     color: #6084a4;
@@ -576,13 +632,16 @@ styles for about us  */
   }
                            
   .our-service-sec h2{
-    font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
+    /* font-weight: 400; */
+    /* font-family: "Fira Sans", sans-serif; */
     color: #eb1111f5;
     font-size: 34px;
   }
   .our-service-sec p{
-    color: #6084a4;
+    color: #203d99;
+    
+    font-weight: 500;
+    /* color: #6084a4; */
     line-height: 1.9;
   }
   .our-service-sec-block{
@@ -786,5 +845,16 @@ styles for about us  */
         left: 0px;
         bottom: 30%;
     }
-
-    
+    .services-icon-images{
+        height: 50px;
+        width: 45%;
+        /* color: white; */
+        transform: rotate(-215deg);
+    }
+    .home-page-btn{
+        border: 2px solid white;
+    }
+    .our-service-sec h3{
+        color: #43378a;
+        font-size: 34px;
+    }
