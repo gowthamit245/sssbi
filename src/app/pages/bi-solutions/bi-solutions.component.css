@@ -296,3 +296,9 @@ i{
   .sss-foot-prints{
     background-color: #f7fafd;
   }
+  .bi-process-image{
+      width: 60%;
+      display: block;
+      margin: auto;
+      margin-bottom: 30px;
+  }

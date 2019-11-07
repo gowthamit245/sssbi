@@ -230,3 +230,9 @@ i{
 .empower-tool-main-heading h5{
     color: #1e2bc2;
 }
+.big-data-image img{
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}

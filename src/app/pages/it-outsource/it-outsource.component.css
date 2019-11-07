@@ -205,3 +205,9 @@ i{
         opacity: 0
     }
 }
+.big-data-image img{
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}

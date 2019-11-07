@@ -1,3 +1,20 @@
+.banner-image img{
+    width: 100%;
+      height: 550px;
+  }
+  .about-banner{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+  .about-text h3{
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+    color: #eb1111f5;
+  }
+  .about-text p{
+    color: #8996a6;
+    line-height: 2rem;
+  }
 .team-section{
     background-color: #f7fafd;
     margin-top: 109px;

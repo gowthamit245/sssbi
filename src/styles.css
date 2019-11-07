@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Vadodara:300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:900&display=swap');
 
-body{
-    overflow: hidden;
-}
+
 .btn-style-two {
     padding: 19px 40px;
     position: relative;
@@ -155,5 +153,7 @@ body{
               transform: translate(0px, 0px) rotate(0deg);
     }
   }
-
+.banner-sec-text a{
+  text-decoration: none;
+}
         
