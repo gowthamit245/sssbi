@@ -206,9 +206,9 @@
         </header>
 
 
+<span class="up-arrow {{upScrollView}}" (click)="onUpArrow()"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
 
-
-<router-outlet></router-outlet>
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 <footer id="footer">
     <div class="container">
         <div class="row py-5">

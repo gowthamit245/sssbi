@@ -12,6 +12,7 @@ export class AppComponent {
   showservices="close";
   menu = "close";
   headerScrollView = 'scrollHeader-close';
+  upScrollView = 'upscroll-close';
   pagename = '';
 
   
@@ -47,7 +48,13 @@ export class AppComponent {
     } else {
       this.headerScrollView = 'scrollHeader-close'
     }
+    if(scrollPosition > 700){
+      this.upScrollView = 'upscroll-open';
+    } else {      
+      this.upScrollView = 'upscroll-close';
+    }
   }
+  
 
   OpenMenuModel(){
     if(this.menu == 'close'){
@@ -56,18 +63,31 @@ export class AppComponent {
       this.menu = 'close';
       this.showservices = '';
     }
-}
-Hide(){
-  this.menu = 'close';
-}
-DisplayServicesList(sel){
-  if(sel == 'Services'){
-   this.showservices = 'sel-'+sel;
-  } else if(sel == 'Aboutus'){
-   this.showservices = 'sel-'+sel;
-  } else {
-   this.showservices = '';
   }
- }
+  Hide(){
+    this.menu = 'close';
+  }
+  DisplayServicesList(sel){
+    if(sel == 'Services'){
+    this.showservices = 'sel-'+sel;
+    } else if(sel == 'Aboutus'){
+    this.showservices = 'sel-'+sel;
+    } else {
+    this.showservices = '';
+    }
+  }
+  onActivate(event) {
+    window.scroll(0,0);
+  }
+  onUpArrow(){
+    let scrollToTop = window.setInterval(() => {
+      let pos = window.pageYOffset;
+      if (pos > 0) {
+          window.scrollTo(0, pos - 50); // how far to scroll on each step
+      } else {
+          window.clearInterval(scrollToTop);
+      }
+    }, 10);
+  }
 
 }

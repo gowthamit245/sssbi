@@ -191,6 +191,22 @@ section .section-title {
     box-shadow: 18px 6px 48px 1px #efe7e7f2;
 } */
 /* HEADER STYLES */
+.up-arrow{
+    position:fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+}
+.up-arrow i{
+    font-size: 40px;
+    color: #001d77;
+    cursor: pointer;
+}
+.upscroll-open{
+    display: block;
+}
 .headerSec{
     position: absolute;
     top: 0px;

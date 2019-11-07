@@ -8,10 +8,7 @@ const routes: Routes = [
 {
   path: '',
   loadChildren: () => import('./pages/pages.module').then(mod => mod.PagesModule)
-},
-// {path:'', loadChildren: './pages/pages.module#PagesModule'},
-
-
+}
 ];
 
 @NgModule({
