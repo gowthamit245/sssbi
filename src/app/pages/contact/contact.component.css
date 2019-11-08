@@ -120,7 +120,7 @@
     background-position: center;
     background-repeat: no-repeat;
    
-    width:115%;
+    width:105%;
     height: 864px;
     animation: rotateme 15s infinite;
     animation-timing-function: linear;
@@ -149,14 +149,25 @@
     top: 96px;
     right: -105px;
   }
+  .contact-us-content h3{
+    color: #102d88f2 !important;
+    font-size: 32px !important;
+  }
   .contact-us-content h1{
-    color: #444444;
-    font-size: 50px;
+    /* font-weight: 400;
+    font-family: "Fira Sans", sans-serif; */
+    /* color: #080085; */
+    color: #ff1f1f !important;
+    font-size: 60px !important;
   }
   .contact-us-content p{
-    color: #7f8497;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
+    /* color: #7f8497;
     font-size: 16px;
-    line-height: 1.8em;
+    line-height: 1.8em; */
   }
   .contact-us-content a{
       text-decoration: none;
@@ -247,3 +258,10 @@
     height:500px;
     width:100%;
 }
+.sec-title h2{
+    /* font-weight: 400;
+    font-family: "Fira Sans", sans-serif; */
+    /* color: #080085; */
+    color: #ff1f1f !important;
+    font-size: 50px !important;
+  }

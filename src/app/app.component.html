@@ -96,7 +96,7 @@
         <div class="container-fluid headerSecBox {{pagename}}">
         <div class="row px-5 py-3 justify-content-between">
         <div class="col-auto">
-        <a class="d-inline-block" routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/title_03.png"></a>
+        <a class="d-inline-block" routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/logo/title_03.png"></a>
         </div>
         <div class="col-auto ml-auto">
         <div class="row align-content-center h-100">
@@ -104,6 +104,8 @@
         routerLink="/about" routerLinkActive="active">About Us</a>
         <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
         routerLink="/services" routerLinkActive="active">Services</a>
+        <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
+        routerLink="/success-stories" routerLinkActive="active">Success Stories</a>
         <a class="d-inline-block pt-1 pr-3 text-decoration-none text-white" 
         routerLink="/contact" routerLinkActive="active">Contact Us</a>
         </div>
@@ -123,17 +125,29 @@
         <div class="row">
         <div class="col-4 automate dnf-digital-capabilities">
         <div class="row">
-        Box1
+                <div class="nav-head-text">
+                    <h2 class="text-white text-center px-3">Business Intelligence</h2>
+                    <p class="text-white text-center px-3 py-3"><i>BI is amongst the most crucial tools available to current era decision makers which gives them a huge advantage over their predecessors.</i></p>
+                </div>
+
         </div>
         </div>
         <div class="col-4 automate dnf-digital-operating">
         <div class="row">
-        Box2
+                <div class="nav-head-text">
+                        <h2 class="text-white text-center px-3">Digital Marketing</h2>
+                        <p class="text-white text-center px-3 py-3"><i>Build vital capabilities to deliver digital outcomes.</i></p>
+                </div>
         </div>
         </div>
         <div class="col-4 automate dnf-talent-transformations">
         <div class="row">
-        Box3
+                <div class="nav-head-text">
+                        <h2 class="text-white text-center px-3">Empowering Talent Transformations</h2>
+                        <p class="text-white text-center px-3 py-3"><i>Embrace the talent revolution to remain relevant in the future.
+
+                            </i></p>
+                </div>
         </div>
         </div>
         </div>
@@ -211,12 +225,12 @@
 <router-outlet (activate)="onActivate($event)"></router-outlet>
 <footer id="footer">
     <div class="container">
-        <div class="row py-5">
+        <!-- <div class="row py-5">
                 <div class="col-auto footer-logo">
                         <a class="d-inline-block"  routerLink="/" routerLinkActive="active"><img class="logo" src="assets/images/logo/title_03.png"></a>
                 </div>
-        </div>
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
+        </div> -->
+        <div class="row text-center text-xs-center text-sm-left text-md-left pt-5">
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <h5> CONTACT INFO</h5>
                 <ul class="list-unstyled quick-links">
@@ -230,7 +244,7 @@
             
             <div class="col-xs-12 col-sm-4 col-md-5">
                 <!-- <h5>Quick links</h5> -->
-                <ul class="list-unstyled quick-links mt-5">
+                <ul class="list-unstyled quick-links">
                     <li><a href=""><i class="fa fa-angle-double-right"></i>US Address</a></li>
                     <li><a href=""><i class="fa fa-angle-double-right"></i>16777,SW 36th Street, Miramar FL 33027 USA,</a></li>
                     <li><a href=""><i class="fa fa-angle-double-right"></i>(+1) 510 493 2202 / 714 388 6646</a></li>
@@ -251,7 +265,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-sm-2">
                 <ul class="list-unstyled list-inline social text-center">
                     <li class="list-inline-item"><a href=""><i class="fa fa-facebook"></i></a></li>
                     <li class="list-inline-item"><a href=""><i class="fa fa-twitter"></i></a></li>

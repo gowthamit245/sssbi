@@ -436,8 +436,10 @@ styles for about us  */
     text-decoration: none;
 }
 .trusted-clients-heading h4{
-    font-size: 3em;
-    color: #ec1f1f!important;
+    color: #01376c!important;
+        font-family: "proxima",sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
 }
 
 .about-us-block{
@@ -858,4 +860,49 @@ styles for about us  */
     .our-service-sec h3{
         color: #43378a;
         font-size: 34px;
+    }
+
+    .awards-carousel-div{
+        height: 200%;
+    }
+    .awards-images img{
+        width: 70%;
+        height: 65%;
+    }
+    .awrds-main-div-slider{
+        width: 100%;
+    }
+    .awards-bg-image img{
+        height: 530px;
+    }
+    .awards-carosel-indicators{
+        bottom: -243px;
+    }
+
+    .case-studies-image img{
+        width: 100%;
+        height: auto;
+    }
+    .case-study-text h3{
+        color: #01376c;
+        font-family: "proxima",sans-serif;
+        font-weight: 700;
+        font-size: 21px;
+    }
+    .case-study-text h6{
+        color: #ec1e1e;
+        font-family: "proxima",sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .case-study-heading h2{
+        color: #ec1a1a;
+        font-family: "proxima",sans-serif;
+        font-weight: 700;
+      
+    }
+    .awards-heading h2{
+        color: #01376c;
+        font-family: "proxima",sans-serif;
+        font-weight: 700;
     }

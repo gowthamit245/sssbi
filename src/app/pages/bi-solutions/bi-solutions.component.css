@@ -302,3 +302,31 @@ i{
       margin: auto;
       margin-bottom: 30px;
   }
+
+
+  .bi-solutions-text h1{
+    color: #01376c;
+    font-size: 32px !important;
+  }
+  .contact-us-content h1{
+    /* font-weight: 400;
+    font-family: "Fira Sans", sans-serif; */
+    /* color: #080085; */
+    color: #ff1f1f !important;
+    font-size: 60px !important;
+  }
+  .bi-solutions-text p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
+    /* color: #7f8497;
+    font-size: 16px;
+    line-height: 1.8em; */
+  }
+  .list-points p{
+    font-weight: 400;
+    /* font-family: "Fira Sans", sans-serif; */
+    color: #102d88f2 !important;
+    font-size: 20px;
+  }

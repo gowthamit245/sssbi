@@ -272,3 +272,24 @@ background-size: 76% 157px;
 .box21 .description {
   color: #fff;
 }
+
+
+
+
+
+.success-content-h{
+  /* font-weight: 400;
+  font-family: "Fira Sans", sans-serif; */
+  /* color: #080085; */
+  color: #ff1f1f !important;
+  font-size: 60px !important;
+}
+.success-content-p{
+  font-size: 18px;
+  line-height: 30px;
+  color: #7a7c7f;
+  font-family: "proxima",sans-serif;
+  /* color: #7f8497;
+  font-size: 16px;
+  line-height: 1.8em; */
+}
