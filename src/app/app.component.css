@@ -204,6 +204,10 @@ section .section-title {
     color: #001d77;
     cursor: pointer;
 }
+.up-arrow img{
+    width: 40%;
+    float: right;
+}
 .upscroll-open{
     display: block;
 }

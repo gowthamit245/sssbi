@@ -220,7 +220,10 @@
         </header>
 
 
-<span class="up-arrow {{upScrollView}}" (click)="onUpArrow()"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
+<span class="up-arrow {{upScrollView}}" (click)="onUpArrow()">
+    <!-- <i class="fa fa-arrow-circle-up" aria-hidden="true"></i> -->
+    <img src="assets/images/circled-up-2.png" alt="Circle Up" />
+</span>
 
 <router-outlet (activate)="onActivate($event)"></router-outlet>
 <footer id="footer">
