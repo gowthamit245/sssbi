@@ -1,4 +1,4 @@
-<section>
+<section #secBox1>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
@@ -14,7 +14,7 @@
                                     Your business is important to us. We always listen to our clientss needs and work with them to find the best possible solutions. If you have any other questions for us or would simply like to get in touch, we would love to hear from you.
                                 </p>
                                 <div class="py-3">
-                                    <a class="btn-style-two py-3" [routerLink]='"."' [fragment]="contact-form">Contact Us</a>
+                                    <a href="javascript:void(0)" (click)="contactScroll()" class="btn-style-two py-3">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
         </div>
     </div>
 </section>
-<section class="services-section">
+<section #secBox2 class="services-section">
         <div class="container">
             <!-- Sec Title -->
             <div class="sec-title centered">
@@ -109,189 +109,15 @@
             
         </div>
 </section>
-<!-- <section class="d-block">
-    <div class="container-fluid">
-        <div class="row position-relative">
-            <div class="col-12">
-               <div class="row contact-us-banner">
-                <img class="d-block"  src="assets/images/sample.jpg"  width="100%" alt="Not Found">
-               </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
-<!-- <section>
-    <div class="container-fluid">
-         
-
-         
-            <div class="team">
-             <div class="container">
-                <h1 class="text-center">Our Team</h1>
-              <div class="row">
-               <div class="col-lg-3 col-md-3 col-sm-12 item">
-                    <i class="fa fa-building contact-form-icons p-3 m-3" aria-hidden="true"></i>
-           
-                <div class="des">
-                        <span>0877-2233733</span>
-                        <p>+91 720 721 3437</p>
-                        <span>info@sssbi.com</span>
-                        <p>frontoffice@sssbi.com</p>
-                 </div>
-                <span class=" font-weight-bold h3 item-text">Direct Contact</span>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-12 item">
-                <img src="images/team-3.jpg" class="img-fluid" alt="team">
-                <div class="des">
-                   Chris
-                 </div>
-                <span class="text-muted">S.enginner</span>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-12 item">
-                <img src="images/team-2.jpg" class="img-fluid" alt="team">
-                <div class="des">
-                  Layla 
-                 </div>
-                <span class="text-muted">Front End Developer</span>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-12 item">
-                <img src="images/team-3.jpg" class="img-fluid" alt="team">
-                 <div class="des">
-                  J.Jirard
-                 </div>
-                <span class="text-muted">Team Manger</span>
-               </div>
-              </div>
-             </div>
-            </div>
-    </div>
-</section> -->
-<!-- <section class="d-block mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h4 class="text-primary h4 text-center  m-3  font-weight-bold">Find Us</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="row ">
-                            <div class="col-lg-3 content-block col-md-4 m-b-30 service-box-1 p-4 ">
-                                    <div class="mb-4 p-3">
-                                            <span class="icon-container grad-style-cd-light offset-4 mb-3 ">
-                                                    <i class="fa fa-mobile fa-4x align-content-between icon-style" aria-hidden="true"></i>
-                                            </span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-center  mb-3">Email</h4>
-                                    </div>
-                                    <div>
-                                        <p class="text-center">hr@sssbi.com</p>
-                                    </div>
-                            </div>
-                        <div class="col-3  ml-3">
-                                sdws
-                        
-                        </div>
-                        <div class="col-3  ml-3">
-                                sdws
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section> -->
-<!-- <section class="mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-4 contact-us-block-main">
-                            <div class="well well-sm contact-us-block"> 
-                                    <div class=" p-3 ">
-                                            <span class="contact-icon-container grad-style-cd-light  about-icon-1 offset-3 mb-3">
-                                                    <i class="fa fa-building fa-4x align-content-between icon-style" aria-hidden="true"></i>
-                                            </span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-center  mb-3">Direct contact</h4>
-                                    </div>
-                                    <div class="text-center contact-address-text">
-                                            <span >0877-2233733</span>
-                                            <p>+91 720 721 3437</p>
-                                            <span >info@sssbi.com</span>
-                                            <p>frontoffice@sssbi.com</p>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-4">
-                                <div class="well well-sm contact-us-block"> 
-                                        <div class=" p-3">
-                                                <span class="contact-icon-container grad-style-cd-light contact-icon-2 offset-3 mb-3">
-                                                        <i class="fa fa-globe fa-4x align-content-between icon-style" aria-hidden="true"></i>
-                                                </span>
-                                        </div>
-                                        <div>
-                                            <h4 class="text-center  mb-3"> Sales & Marketing</h4>
-                                        </div>
-                                        <div class="text-center contact-address-text">
-                                                <span >+91 720 720 8385</span>
-                                                <p>sales@sssbi.com</p>
-                                                <span >marketing@sssbi.com</span>
-                                             
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-4">
-                                    <div class="well well-sm contact-us-block"> 
-                                            <div class=" p-3">
-                                                    <span class="contact-icon-container grad-style-cd-light contact-icon-3 offset-3 mb-3">
-                                                            <i class="fa fa-thumbs-o-up fa-4x align-content-between icon-style" aria-hidden="true"></i>
-                                                    </span>
-                                            </div>
-                                            <div class="contact-continer-text">
-                                                <h4 class="text-center  mb-3">Contact HR</h4>
-                                            </div>
-                                            <div class="text-center contact-address-text">
-                                                    <span >+91 720 721 3561</span>
-                                                    <p>hr@sssbi.com</p>
-                                                  
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-4">
-                                        <div class="well well-sm contact-us-block"> 
-                                                <div class=" p-3">
-                                                        <span class="contact-icon-container grad-style-cd-light about-icon-4 offset-3 mb-3">
-                                                                <i class="fa fa-star-half-o fa-4x align-content-between icon-style" aria-hidden="true"></i>
-                                                        </span>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-center  mb-3">
-                                                            Contact Staffing</h4>
-                                                </div>
-                                                <div class="text-center contact-address-text">
-                                                        <span >+91 720 721 3562</span>
-                                                        <p>staffing@sssbi.com</p>
-                                                </div>
-                                        </div>
-                                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section> -->
-<section class="mt-4">
+<section  class="mt-4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <div class="row mt-5"> 
+                    <div class="row mt-5">
                         <div class="col-6">
-                                <h4  [attr.id]='contact-form'  class="h4 text-danger text-center display-4 font-weight-bold">Drop Us a Line</h4>
+                                <h4 id="contact-form" class="h4 text-danger text-center display-4 font-weight-bold">Drop Us a Line</h4>
                             <div class="row">
                                 <div class="col-7 offset-3">
-                                        
                                         <form action="" method="POST">
                                             <div class="form-group">
                                             <label for="recipient-name" class="col-form-label"> Name:</label>

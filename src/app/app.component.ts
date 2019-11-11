@@ -42,7 +42,7 @@ export class AppComponent {
   @HostListener('window:scroll', ['$event'])
   checkScroll(e) {
     const scrollPosition = window.pageYOffset
-    console.log(scrollPosition);
+    // console.log(scrollPosition);
     if (scrollPosition > 200) {
       this.headerScrollView = 'scrollHeader-open'
     } else {
