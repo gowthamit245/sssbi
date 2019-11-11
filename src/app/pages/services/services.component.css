@@ -75,7 +75,7 @@ figure.img-sec p {
     text-align: left;
     text-transform: none !important;
     font-size: 14px;
-    font-family: 'latolight';
+    font-family: "proxima",sans-serif;
     left: 33px;
 }
 figure.img-sec p {
@@ -87,6 +87,7 @@ figure.img-sec p {
     padding: 0px;
     left: 54px;
     bottom: 60px;
+    font-family: "proxima",sans-serif;
 }
 .img-sec:hover h2{
     color: #fff;
@@ -207,47 +208,47 @@ figure.img-sec p {
     margin: -25px 0 0 -25px;
 }
 .icon-box span{
-    background-image: url("../../../assets/images/services/basketsnodejs_icons_.png");
+    background-image: url("../../../assets/images/services/all_icons.png");
     background-size: 50px 300px;
 
 }
 
-.ball-scale-ripple-multiple>div {
+.ball>div {
     position: absolute;
     width: 130px;
     height: 130px;
     border-radius: 100%;
     border: 1px solid #99d1ff;
-    -webkit-animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8);
-    animation: ball-scale-ripple-multiple 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8)
+    -webkit-animation: ball 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8);
+    animation: ball 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8)
 }
 
 
-.ball-scale-ripple-multiple {
+.ball {
     position: relative
 }
 
-.ball-scale-ripple-multiple>div:nth-child(0) {
+.ball>div:nth-child(0) {
     -webkit-animation-delay: -.8s;
     animation-delay: -.8s
 }
 
-.ball-scale-ripple-multiple>div:nth-child(1) {
+.ball>div:nth-child(1) {
     -webkit-animation-delay: -.6s;
     animation-delay: -.6s
 }
 
-.ball-scale-ripple-multiple>div:nth-child(2) {
+.ball>div:nth-child(2) {
     -webkit-animation-delay: -.4s;
     animation-delay: -.4s
 }
 
-.ball-scale-ripple-multiple>div:nth-child(3) {
+.ball>div:nth-child(3) {
     -webkit-animation-delay: -.2s;
     animation-delay: -.2s
 }
 
-@-webkit-keyframes ball-scale-ripple-multiple {
+@-webkit-keyframes ball {
     0% {
         -webkit-transform: scale(.1);
         transform: scale(.1);
@@ -263,7 +264,7 @@ figure.img-sec p {
     }
 }
 
-@keyframes ball-scale-ripple-multiple {
+@keyframes ball {
     0% {
         -webkit-transform: scale(.1);
         transform: scale(.1);
@@ -280,13 +281,58 @@ figure.img-sec p {
 }
 .our-service-sec h2{
     font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
-    color: #eb1111f5;
+    font-family: "proxima",sans-serif;
+    color: #ff1f1f;
+    /* color: #102d88f2 !important; */
     font-size: 34px;
+  }
+  .our-service-sec h4{
+    color: #ff1f1f
   }
   .approach-sec h4{
     color: #43408b;
   }
+
   p{
-    color: #7f8497;
+    font-size: 17px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
+  }
+  /* cbgcolor{
+      background: #102d88f2;
+      color: white;
+      background-color: #102d88f2;
+  } */
+  .morediv{
+    background: #587df3f2;
+    box-shadow: 0px 0px 8px #ccc;
+    border-radius: 10px;
+    margin: 12px;
+    transition: 0.5s;
+    width:14%;
+  }
+
+  .cfont{
+    font-size: 22px;
+  }
+  .img-pos1{
+    background-position: 0 -0;
+  }
+  .img-pos2{
+    background-position: 0 -50px;
+  }
+  .img-pos3{
+    background-position: 0 -100px;
+  }
+  .img-pos4{
+    background-position: 0 -150px;
+  }
+  .img-pos5{
+    background-position: 0 -200px;
+  }
+  .img-pos6{
+    background-position: 0 -250px;
+  }
+  .subheading{
+      color:#102d88f2 !important;
   }

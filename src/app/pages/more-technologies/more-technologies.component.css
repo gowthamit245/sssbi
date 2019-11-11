@@ -35,4 +35,11 @@
         overflow: hidden;
         display: block;
     }
-    
+    p{
+        font-size: 17px;
+        color: #7a7c7f;
+        font-family: "proxima",sans-serif;
+      }
+     h2{
+        color: #ff1f1f ;
+      }

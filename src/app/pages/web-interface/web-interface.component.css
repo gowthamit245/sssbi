@@ -5,8 +5,30 @@
     width: 130px;
     height: 130px;
 }
+.web-text h3{
+    color: #102d88f2 !important;
+    font-size: 32px !important;
+    
+  }
+  .web-text h4{
+    
+    color: #ff1f1f !important;
+    font-size:  32px !important;
+  }
+  p{
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
+  }
+  .web-text p{
+
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
+  }
 .ctext-color{
-    color:#ec1a1a;
+    color:#ff1f1f;
 }
 .icon-box{
     
@@ -215,72 +237,72 @@ i{
   .all:hover{
     background-size: 76% 157px;
   }
-  .bi img{
+  .branding img{
     height: 120px;
     position: relative;
     width: 79px;
     top: -5px;
   }
-  .bi{
-    background-image: url("../../../assets/images/success-stories/bi-bottom.png");
+  .branding{
+    background-image: url("../../../assets/images/services/web/Branding_bottom.png");
     background-size: 0px 0px;
     background-position: top center;
     background-repeat: no-repeat;
     transition: 0.8s ;
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
-  .bi:hover{
+  .branding:hover{
   background-size: 76% 157px;
   }
-  .enterprise-it img{
+  .dm img{
     height: 120px;
     position: relative;
     width: 79px;
     top: -5px;
   }
-  .enterprise-it{
-    background-image: url("../../../assets/images/success-stories/enterprise-it-bottom.png");
+  .dm{
+    background-image: url("../../../assets/images/services/web/Digital_marketing-bottom.png");
     background-size: 0px 0px;
     background-position: top center;
     background-repeat: no-repeat;
     transition: 0.8s ;
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
-  .enterprise-it:hover{
+  .dm:hover{
   background-size: 76% 157px;
   }
-  .enterprize-mobility img{
+  .mobile-app img{
     height: 120px;
     position: relative;
     width: 79px;
     top: -5px;
   }
-  .enterprize-mobility{
-    background-image: url("../../../assets/images/success-stories/enterprize-mobility-bottom.png");
+  .mobile-app{
+    background-image: url("../../../assets/images/services/web/mobile_app_bottom.png");
     background-size: 0px 0px;
     background-position: top center;
     background-repeat: no-repeat;
     transition: 0.8s ;
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
-  .enterprize-mobility:hover{
+  .mobile-app:hover{
   background-size: 76% 157px;
   }
-  .tech-consult img{
+  .webdevelopment img{
     height: 120px;
     position: relative;
     width: 79px;
     top: -5px;
   }
-  .tech-consult{
-    background-image: url("../../../assets/images/success-stories/tech-consult-bottom.png");
+  .webdevelopment{
+    background-image: url("../../../assets/images/services/web/webdevelopment._bottom.png");
     background-size: 0px 0px;
     background-position: top center;
     background-repeat: no-repeat;
     transition: 0.8s ;
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
-  .tech-consult:hover{
+  .webdevelopment:hover{
   background-size: 76% 157px;
   }
   .web-services img{
