@@ -14,7 +14,7 @@
                                     Your business is important to us. We always listen to our clientss needs and work with them to find the best possible solutions. If you have any other questions for us or would simply like to get in touch, we would love to hear from you.
                                 </p>
                                 <div class="py-3">
-                                    <a href="#contact-form" class="btn-style-two py-3">Contact Us</a>
+                                    <a class="btn-style-two py-3" [routerLink]='"."' [fragment]="contact-form">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -286,9 +286,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <div class="row mt-5">
+                    <div class="row mt-5"> 
                         <div class="col-6">
-                                <h4 id="contact-form" class="h4 text-danger text-center display-4 font-weight-bold">Drop Us a Line</h4>
+                                <h4  [attr.id]='contact-form'  class="h4 text-danger text-center display-4 font-weight-bold">Drop Us a Line</h4>
                             <div class="row">
                                 <div class="col-7 offset-3">
                                         
