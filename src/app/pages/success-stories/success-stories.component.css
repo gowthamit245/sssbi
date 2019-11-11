@@ -293,3 +293,6 @@ background-size: 76% 157px;
   font-size: 16px;
   line-height: 1.8em; */
 }
+.ct-tab-container{
+  overflow: hidden;
+}

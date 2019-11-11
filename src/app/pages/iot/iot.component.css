@@ -8,19 +8,19 @@
   }
   .bi-solutions-text h3{
     font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
     color: #eb1111f5;
+    font-size: 34px;
   }
   .bi-solutions-text p{
-    color: #8996a6;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
   }
   .bi-process-image img{
     width: 100%;
       height: auto;
   }
-
-
   .img-icon{
     position: absolute;
     left: -80px;
@@ -32,7 +32,6 @@
     color:#ec1a1a;
 }
 .icon-box{
-    
     position: absolute;
     left: 50%;
     top: 50%;
@@ -99,7 +98,6 @@ i{
     background: #eeeded; */
     border-right: dotted black;
 }
-
 .animate-ball {
     position: relative
 }
@@ -136,7 +134,6 @@ i{
 }
 .cleft{
     left: 14px;
-  
 }
 .title-center{
     top: 52px;
@@ -152,7 +149,6 @@ i{
     /* background-image: url("../../assets/images/basketsnodejs_icons_.png"); */
     background-size: 50px 300px;
     background-position: 0 -202px;
-
 }
 .animate-left{
     position:relative;
@@ -163,35 +159,27 @@ i{
     animation:animate-right 1.5s ease ;  
 }
 @keyframes animate-right{
-    
     from{right:-300px;opacity:0} to{right:0;opacity:1}
-
 }
 @keyframes animate-left{
-    
     from{left:-300px;opacity:0} to{left:0;opacity:1}
-
 }
 .animate-ball>div:nth-child(0) {
     -webkit-animation-delay: -.8s;
     animation-delay: -.8s
 }
-
 .animate-ball>div:nth-child(1) {
     -webkit-animation-delay: -.6s;
     animation-delay: -.6s
 }
-
 .animate-ball>div:nth-child(2) {
     -webkit-animation-delay: -.4s;
     animation-delay: -.4s
 }
-
 .animate-ball>div:nth-child(3) {
     -webkit-animation-delay: -.2s;
     animation-delay: -.2s
 }
-
 @-webkit-keyframes animate-ball {
     0% {
         -webkit-transform: scale(.1);
@@ -207,7 +195,6 @@ i{
         opacity: 0
     }
 }
-
 @keyframes animate-ball {
     0% {
         -webkit-transform: scale(.1);
@@ -223,25 +210,27 @@ i{
         opacity: 0
     }
 }
-
 .empower-tool-text p{
-    color: #8996a6;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
 }
 .empower-tool-main-heading h5{
-    color: #1e2bc2;
+    font-weight: 400;
+    color: #eb1111f5;
+    font-size: 25px;
 }
 .top-technology{
     margin-left:6.1em;
 }
-.top-technology h4
-{
+.top-technology h4{
     font-weight: 400;
     font-family: "Fira Sans", sans-serif;
     color: #eb1111f5;
     font-size: 34px;
 }
-.top-technology p
-{
+.top-technology p{
     color: #8996a6;
     font-weight: 400;
     font-family: "Hind Vadodara", sans-serif;
@@ -255,7 +244,6 @@ i{
     height: 31px;
     background: url(../../../assets/images/image-tick.png) no-repeat;
     background-size: 30px 154px;
-    
 }
 .list-points .list-points-div .list-image-1{
     background-position: 0 0;
@@ -275,7 +263,6 @@ i{
 .list-points .list-points-div .list-image-6{
     background-position: 0 -93px;
 }
-
 .list-points .list-points-div  {
     font-family: 'Raleway', sans-serif;
     position: relative;
@@ -283,16 +270,23 @@ i{
     color: #000;
     padding-left: 40px;
 }
-
 .list-points-bi-image img{
     height: auto;
     width: 100%;
 }
 .iot-image img{
-   
-        width: 60%;
+        width: 100%;
         display: block;
         margin: auto;
         margin-bottom: 30px;
-   
+}
+.animate-overflow{
+    overflow: hidden;
+}
+.animated-overflow{
+    overflow: hidden;
+}
+.iot-list-image img{
+    width: 100%;
+    height: auto;
 }

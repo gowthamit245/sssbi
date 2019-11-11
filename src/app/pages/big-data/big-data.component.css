@@ -8,16 +8,21 @@
   }
   .bi-solutions-text h3{
     font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
     color: #eb1111f5;
+    font-size: 34px;
   }
   .bi-solutions-text p{
-    color: #8996a6;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
   }
   .bi-process-image img{
     width: 100%;
       height: auto;
+  }
+  .animated-overflow{
+      overflow: hidden;
   }
 
 
@@ -62,7 +67,7 @@ i{
     font-size: 31px;
     position: relative;
     text-align: center;
-    left: 8px;
+    left: 13px;
     top: 11px;
     color: white;
 }
@@ -228,7 +233,9 @@ i{
     color: #8996a6;
 }
 .empower-tool-main-heading h5{
-    color: #1e2bc2;
+    font-weight: 400;
+    color: #eb1111f5;
+    font-size: 27px;
 }
 .big-data-image img{
     width: 60%;
