@@ -165,15 +165,22 @@
 .ctextcolor-sub{
     color:#203f99f5;
 }
-/* .cfont{
-    font-family: 'Raleway', sans-serif;
-    color: #8996a6;
-    line-height: 2rem;
-} */
+.heading-sec h3{
+    color: #102d88f2 !important;
+    font-size: 32px !important;
+}
+.heading-sec h1{
+    color: #ff1f1f !important;
+    font-size: 44px !important;
+    font-weight: 400;
+}
 
 .services-list img{
     height: 250px;
     width: 300px;
+}
+.dm-text{
+    overflow: hidden;
 }
 .dm-text h3{
     color: #102d88f2 !important;
@@ -186,6 +193,9 @@
     font-size:  32px !important;
   }
   p{
+   
+    font-size: 18px;
+    line-height: 30px;
     color: #7a7c7f;
     font-family: "proxima",sans-serif;
   }

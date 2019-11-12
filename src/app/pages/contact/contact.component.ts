@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { CommonService } from '../../_services/common.service';
 export class Contact {
 
   constructor(
@@ -6,6 +7,7 @@ export class Contact {
     public email: string='',
     public phone: string='',
     public message?: string,
+   
   ) {  }
 
 }
@@ -20,7 +22,9 @@ export class ContactComponent implements OnInit {
   @ViewChild("secBox2", { static: true }) secBox2: ElementRef;
  
   model: Contact = new Contact();
-  constructor() { }
+  constructor(
+    private commonService : CommonService
+  ) { }
 
   ngOnInit() {
     console.log(this.secBox1);
@@ -41,22 +45,30 @@ export class ContactComponent implements OnInit {
     var retVal = true; 
     
     if(this.model.name.trim() == ''){ 
-      // this.commonService.showError('Enter User ID.');
+       this.commonService.showError('Enter User Name.');
       retVal = false;
     }
     if(this.model.email.trim() == ''){ 
-      // this.commonService.showError('Enter Password.');
+       this.commonService.showError('Enter Email.');
       retVal = false;
     }
     if(this.model.phone == ''){ 
-      // this.commonService.showError('Enter Password.');
+      this.commonService.showError('Enter Phone Number.');
       retVal = false;
     }
      
    return retVal;
   }
   onFormSubmit(){
-    if(!this.ValidateContact()) return;
+    if(!this.ValidateContact())
+    {
+      return;
+    }
+    else{
+      this.model= new Contact();
+      this.commonService.showSuccess('Your Details Successfully Submitted.');
+    }
+
     
     console.log(this.model);
   }

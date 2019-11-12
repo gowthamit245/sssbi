@@ -133,6 +133,7 @@ i{
     width: 2px;
     background-color: #3fa1ff;
 }
+
 .leftborder{
     position: absolute;
     right: 10px;
@@ -291,3 +292,6 @@ p{
     color: #7a7c7f;
     font-family: "proxima",sans-serif;
   }
+.animation-overflow{
+    overflow: hidden;
+}

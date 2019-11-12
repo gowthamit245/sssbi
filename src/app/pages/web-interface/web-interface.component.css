@@ -239,7 +239,7 @@ i{
       transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
   .all:hover{
-    background-size: 76% 157px;
+    background-size: 58% 157px;
   }
   .branding img{
     height: 120px;
@@ -256,7 +256,7 @@ i{
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
   .branding:hover{
-  background-size: 76% 157px;
+  background-size: 58% 157px;
   }
   .dm img{
     height: 120px;
@@ -273,7 +273,7 @@ i{
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
   .dm:hover{
-  background-size: 76% 157px;
+  background-size: 58% 157px;
   }
   .mobile-app img{
     height: 120px;
@@ -290,7 +290,7 @@ i{
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
   .mobile-app:hover{
-  background-size: 76% 157px;
+  background-size: 58% 157px;
   }
   .webdevelopment img{
     height: 120px;
@@ -307,7 +307,7 @@ i{
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
   .webdevelopment:hover{
-  background-size: 76% 157px;
+  background-size: 58% 157px;
   }
   .web-services img{
     height: 120px;
@@ -324,7 +324,7 @@ i{
     transition-timing-function: cubic-bezier(0.42,0,0.58,1);
   }
   .web-services:hover{
-  background-size: 76% 157px;
+  background-size: 58% 157px;
   }
   .success-sec h1{
       color:red;
@@ -485,3 +485,19 @@ i{
   .box21 .description {
     color: #fff;
   }
+  .big-data-image img{
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.web-animation-sec {
+    overflow: hidden;
+}
+@media (min-width: 768px)
+{
+    .col-md-2 {
+        flex: 0 0 19.666667%;
+        max-width: 19.666667%;
+    }
+}
