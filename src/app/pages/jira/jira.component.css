@@ -1,6 +1,11 @@
-.banner-image img{
+.banner-image {
     width: 100%;
-      height: 550px;
+    height: 550px;
+    overflow: hidden;
+  }
+  .banner-image img{
+    width: 100%;
+    height: auto;
   }
   .bi-solutions{
     padding-left: 0px!important;
@@ -8,12 +13,15 @@
   }
   .bi-solutions-text h3{
     font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
     color: #eb1111f5;
+    font-size: 34px;
+    font-family: "proxima",sans-serif;
   }
   .bi-solutions-text p{
-    color: #8996a6;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
   }
   .bi-process-image img{
     width: 100%;
@@ -140,7 +148,7 @@ i{
 }
 .title-center{
     top: 52px;
-    left: 140px;
+    left: 320px;
     position: relative;
 }
 .rtitle-center{
@@ -225,10 +233,16 @@ i{
 }
 
 .empower-tool-text p{
-    color: #8996a6;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
 }
 .empower-tool-main-heading h5{
-    color: #1e2bc2;
+    font-weight: 400;
+    color: #eb1111f5;
+    font-size: 24px;
+    font-family: "proxima",sans-serif;
 }
 .big-data-image img{
     width: 60%;

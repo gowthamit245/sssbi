@@ -8,16 +8,24 @@
   }
   .bi-solutions-text h3{
     font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
     color: #eb1111f5;
+    font-size: 34px;
+    font-family: "proxima",sans-serif;
   }
   .bi-solutions-text p{
-    color: #8996a6;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
   }
-  .bi-process-image img{
+  .banner-image {
     width: 100%;
-      height: auto;
+    height: 550px;
+    overflow: hidden;
+  }
+  .banner-image img{
+    width: 100%;
+    height: auto;
   }
 
 
@@ -225,10 +233,16 @@ i{
 }
 
 .empower-tool-text p{
-    color: #8996a6;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
 }
 .empower-tool-main-heading h5{
-    color: #1e2bc2;
+    font-weight: 400;
+    color: #eb1111f5;
+    font-size: 24px;
+    font-family: "proxima",sans-serif;
 }
 
 
@@ -287,8 +301,10 @@ i{
     background: linear-gradient(117deg, #ec1a1a 0%, #5034ebe6 100%);
   }
   .our-service-sec-block h4{
-    color: #f70404eb;
-    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    color: #eb1111f5;
+    font-size: 26px;
+    font-family: "proxima",sans-serif;
   }
   .our-service-sec-block:hover h4{
     color: white;
@@ -297,7 +313,7 @@ i{
     background-color: #f7fafd;
   }
   .bi-process-image{
-      width: 60%;
+      width: 100%;
       display: block;
       margin: auto;
       margin-bottom: 30px;
@@ -305,15 +321,19 @@ i{
 
 
   .bi-solutions-text h1{
-    color: #01376c;
-    font-size: 32px !important;
+    font-weight: 400;
+    color: #eb1111f5;
+    font-size: 34px;
+    font-family: "proxima",sans-serif;
   }
   .contact-us-content h1{
     /* font-weight: 400;
     font-family: "Fira Sans", sans-serif; */
     /* color: #080085; */
-    color: #ff1f1f !important;
-    font-size: 60px !important;
+    font-weight: 400;
+    color: #eb1111f5;
+    font-size: 34px;
+    font-family: "proxima",sans-serif;
   }
   .bi-solutions-text p{
     font-size: 18px;
@@ -325,8 +345,25 @@ i{
     line-height: 1.8em; */
   }
   .list-points p{
-    font-weight: 400;
-    /* font-family: "Fira Sans", sans-serif; */
-    color: #102d88f2 !important;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
+  }
+
+  .our-analytics-image{
+      width: 100%;
+      height: auto;
+  }
+  .your-bi-journey{
+    background-color: #182e68 !important;
+   
+  }
+  .your-bi-journey img{
+      width: 100%;
+      height: auto;
+  }
+  .customers-bi img{
+      width: 100%;
+      height: auto;
   }

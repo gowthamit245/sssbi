@@ -2,9 +2,14 @@
 /* .success-sec{
   background-color: #f7fafd;
 } */
+.banner-image {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
 .banner-image img{
   width: 100%;
-    height: 550px;
+  height: auto;
 }
 .success-stories-banner{
   padding-left: 0px!important;
