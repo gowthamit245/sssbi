@@ -89,7 +89,6 @@ i{
     -webkit-animation: animate-ball 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8);
     animation: animate-ball 1.25s 0s infinite cubic-bezier(.21, .53, .56, .8)
 }
-
 .dots-image{
     position: relative;
     left: -30px;
@@ -127,7 +126,7 @@ i{
 }
 .title-center{
     top: 52px;
-    left: 140px;
+    left: 40px;
     position: relative;
 }
 .rtitle-center{

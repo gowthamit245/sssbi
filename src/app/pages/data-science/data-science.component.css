@@ -123,7 +123,7 @@ i{
 .rightborder{
     position: absolute;
     left: -20px;
-    top: 12px;
+    top: 25px;
     bottom: 8px;
     width: 2px;
     background-color: #3fa1ff;
@@ -230,7 +230,7 @@ i{
 .empower-tool-text p{
     color: #8996a6;
 }
-.empower-tool-main-heading h5{
+.empower-tool-main-heading h4{
     color: #1e2bc2;
 }
 .big-data-image img{
@@ -239,6 +239,50 @@ i{
     margin: auto;
     margin-bottom: 30px;
 }
-.animate-overflow{
-    overflow: hidden;
+
+.list-points .list-points-div .list-image-bk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 31px;
+    background: url(../../../assets/images/image-tick.png) no-repeat;
+    background-size: 30px 154px;
+    
 }
+.list-points .list-points-div .list-image-1{
+    background-position: 0 0;
+}
+.list-points .list-points-div .list-image-2{
+    background-position: 0 -31px;
+}
+.list-points .list-points-div .list-image-3{
+    background-position: 0 -62px;
+}
+.list-points .list-points-div .list-image-4{
+    background-position: 0 -124px;
+}
+.list-points .list-points-div .list-image-5{
+    background-position: 0 -31px;
+}
+.list-points .list-points-div .list-image-6{
+    background-position: 0 -93px;
+}
+
+.list-points .list-points-div  {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    font-size: 16px;
+    color: #000;
+    padding-left: 40px;
+}
+
+.list-points-bi-image img{
+    height: auto;
+    width: 100%;
+}
+p{
+    font-size: 17px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
+  }

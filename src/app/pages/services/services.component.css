@@ -178,6 +178,15 @@ figure.img-sec p {
     width: 1px;
     background: #eeeded;
 }
+.border-left{
+    position: absolute;
+    top: 129px;
+    left: -1px;
+    height: 100%;
+    width: 1px;
+    background: #eeeded;
+}
+
 .img-icon{
     position: absolute;
     left: -80px;
