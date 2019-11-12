@@ -235,12 +235,15 @@ i{
 }
 
 .empower-tool-text p{
-    color: #8996a6;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7a7c7f;
+    font-family: "proxima",sans-serif;
 }
 .empower-tool-main-heading h5{
     font-weight: 400;
     color: #eb1111f5;
-    font-size: 27px;
+    font-size: 25px;
 }
 .big-data-image img{
     width: 60%;
