@@ -16,6 +16,8 @@ import { ItOutsourceComponent } from './it-outsource/it-outsource.component';
 import { WebInterfaceComponent } from './web-interface/web-interface.component';
 import { JiraComponent } from './jira/jira.component';
 import { DataScienceComponent } from './data-science/data-science.component';
+
+import { FormsModule }   from '@angular/forms';
 import { MoreTechnologiesComponent } from './more-technologies/more-technologies.component';
 
 const routes: Routes = [
@@ -45,7 +47,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [LayoutComponent,AboutComponent,ContactComponent, SuccessStoriesComponent, ServicesComponent, BiSolutionsComponent, BusinessAnalyticsComponent, BigDataComponent, IotComponent, StaffingServicesComponent, DigitalMarketingComponent, ItOutsourceComponent, WebInterfaceComponent, JiraComponent, DataScienceComponent, MoreTechnologiesComponent],
   imports: [
-    CommonModule,RouterModule.forChild(routes)
+    CommonModule,FormsModule, RouterModule.forChild(routes)
   ]
 })
 export class PagesModule { }

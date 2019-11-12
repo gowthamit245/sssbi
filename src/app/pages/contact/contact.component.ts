@@ -1,5 +1,14 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+export class Contact {
 
+  constructor(
+    public name: string='',
+    public email: string='',
+    public phone: string='',
+    public message?: string,
+  ) {  }
+
+}
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -9,7 +18,8 @@ export class ContactComponent implements OnInit {
 
   @ViewChild("secBox1", { static: true }) secBox1: ElementRef;
   @ViewChild("secBox2", { static: true }) secBox2: ElementRef;
-
+ 
+  model: Contact = new Contact();
   constructor() { }
 
   ngOnInit() {
@@ -26,6 +36,29 @@ export class ContactComponent implements OnInit {
         window.clearInterval(scrollToTop);
       }
     }, 10);
+  }
+  ValidateContact(){
+    var retVal = true; 
+    
+    if(this.model.name.trim() == ''){ 
+      // this.commonService.showError('Enter User ID.');
+      retVal = false;
+    }
+    if(this.model.email.trim() == ''){ 
+      // this.commonService.showError('Enter Password.');
+      retVal = false;
+    }
+    if(this.model.phone == ''){ 
+      // this.commonService.showError('Enter Password.');
+      retVal = false;
+    }
+     
+   return retVal;
+  }
+  onFormSubmit(){
+    if(!this.ValidateContact()) return;
+    
+    console.log(this.model);
   }
 
 }
