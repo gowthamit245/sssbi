@@ -345,3 +345,7 @@ figure.img-sec p {
   .subheading{
       color:#102d88f2 !important;
   }
+
+  .overflow-hidden{
+      overflow: hidden;
+  }
