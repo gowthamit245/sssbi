@@ -795,9 +795,12 @@ styles for about us  */
     }
     .awrds-main-div-slider{
         width: 100%;
+        background: #0000006b;
+        height: 427px;
     }
-    .awards-bg-image img{
+    .awards-bg-image{
         height: 530px;
+        overflow: hidden;
     }
     .awards-carosel-indicators{
         bottom: -243px;
