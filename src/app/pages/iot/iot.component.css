@@ -71,8 +71,11 @@ i{
     color: white;
 }
 .cfont{
-    font-size: 48px;
-    top: 2px;
+    /* font-size: 48px;
+    top: 2px; */
+    font-size: 34px;
+    top: 7px;
+    left: 10px;
 }
 .animate-right i{
     font-size: 31px;
@@ -236,7 +239,8 @@ i{
     font-size: 34px;
 }
 .top-technology p{
-    color: #8996a6;
+    /* color: #8996a6; */
+    color: #3f4248;
     font-weight: 400;
     font-family: "Hind Vadodara", sans-serif;
     line-height: 2rem;

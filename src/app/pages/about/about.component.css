@@ -267,7 +267,8 @@
         transform:rotate(360deg)}}
         @keyframes around-1{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}} */
 .team-content p{
-    color: #6084a4;
+    /* color: #6084a4; */
+    color: #65666d;
     line-height: 1.9;
     margin-top: 20px;
     margin-bottom: 0;
@@ -295,16 +296,18 @@
     font-size: 18px;
 }
 .about-us-block:hover{
-    color: #ffffff;
+    /* color: #ffffff; */
     transition: 0.5s;
+    color: #203f99;
     transform: translateY(-10px);
     /* background: linear-gradient(117deg, #ec1a1a 0%, #203f99f5 100%); */
     /* background: linear-gradient(135deg, #ff000024 0%, rgb(247, 0, 4) 100%); */
     /* background: linear-gradient(135deg, #ec1a1a 0%, #203f99f5 100%); */
-    background: linear-gradient(135deg, #ffbf00 0%, rgba(247, 0, 4, 0.84) 100%);
+    /* background: linear-gradient(135deg, #ffbf00 0%, rgba(247, 0, 4, 0.84) 100%); */
 }
 .about-us-block:hover p,.about-us-block:hover span,.about-us-block:hover h4 {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #203f99;
 }
 .about-us-block:hover span{
     background: #ffffffe3;
@@ -420,25 +423,31 @@
     width: 118px;
     height: 123px;
     border-radius: 24px;
-    border: 1px solid #56b3ff;
+    /* border: 1px solid #56b3ff; */
+    border: 1px solid #001d77;
     transition: all .4s linear;
     display: inline-block;
-    box-shadow: 5px 8px 10px #56b3ff;
+    /* box-shadow: 5px 8px 10px #56b3ff; */
+    box-shadow: 5px 8px 10px #001d77;
 }
 .fa-5x {
     font-size: 2.5em;
     padding: 34px;
-    color: #f35454d9;
+    color: #ff1d0d;
+    /* color: #f35454d9; */
+    /* color: #001d77; */
 }
 .about-vision-section-inner:hover{
     box-shadow: 5px 8px 10px #f46c6d;
 }
 .about-vision-section-content h3{
-    color: #69bbff;
+    /* color: #69bbff; */
     font-size: 21px;
+    color: #001d77;
 }
 .about-vision-section-content p{
-    color: #9d9d9d;
+    /* color: #9d9d9d; */
+    color: #65666d;
 }
 .our-service-sec h2{
     color: #01376c;

@@ -21,13 +21,13 @@
     font-weight: 600;
     border-radius: 50px;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, #ec1a1a 0%, #203f99f5 100%);
+    /* background: linear-gradient(135deg, #ec1a1a 0%, #203f99f5 100%); */
     /* padding: 12px 30px 12px; */
     /* border: 2px solid #203f99; */
     box-shadow: 0px 10px 10px rgba(0,0,0,0.20);
 }
 .btn-style-two:hover{
-    background: linear-gradient(135deg, #203f99f5 0%, #ec1a1a 100%);
+    /* background: linear-gradient(135deg, #203f99f5 0%, #ec1a1a 100%); */
     /* border: 2px solid #ec1f1f; */
     color:white;
 }
@@ -215,3 +215,7 @@
           transform:scale(1)
       }
   }
+
+ body{
+  font-family: "proxima",sans-serif;
+ } 

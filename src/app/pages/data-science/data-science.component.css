@@ -234,7 +234,8 @@ i{
 }
 
 .empower-tool-text p{
-    color: #8996a6;
+    /* color: #8996a6; */
+    color: #6b6d71;
 }
 .empower-tool-main-heading h4{
     color: #1e2bc2;
@@ -255,6 +256,9 @@ i{
     background: url(../../../assets/images/image-tick.png) no-repeat;
     background-size: 30px 154px;
     
+}
+.list-image-1 p{
+    color: #686b71;
 }
 .list-points .list-points-div .list-image-1{
     background-position: 0 0;

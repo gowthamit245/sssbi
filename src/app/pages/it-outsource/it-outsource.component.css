@@ -49,8 +49,17 @@ i{
     color: white;
 }
 .cfont{
-    font-size: 48px;
+    /* font-size: 48px;
+    top: 2px; */
+    font-size: 38px;
     top: 2px;
+    left: 4px;
+}
+.fa_icon{
+    left: 9px !important;
+}
+.fa_icon1{
+    left:5px !important;
 }
 .animate-right i{
     font-size: 31px;

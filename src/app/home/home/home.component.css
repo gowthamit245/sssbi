@@ -18,7 +18,8 @@
 }
 
 .service-box-1 p{
-   color: #6084a4;
+   /* color: #6084a4; */
+   color: #65666d;
     font-weight: 300;
     font-family: "Hind Vadodara", sans-serif;
     line-height: 2rem;
@@ -26,7 +27,8 @@
 .service-box-1 h4{
     font-weight: 500;
     font-family: "Fira Sans", sans-serif;
-    color: #203f99;
+    /* color: #203f99; */
+    color: #ff1d0d;
 }
 .icon-container{
     width: 135px;
@@ -404,7 +406,8 @@ Kumar E
 .top-technology p
 {
     /* color: #8996a6; */
-    color: #203d99;
+    /* color: #203d99; */
+    color: #65666d;
     font-weight: 500;
     font-family: "Hind Vadodara", sans-serif;
     line-height: 2rem;
@@ -432,10 +435,12 @@ styles for about us  */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 8px 8px #c3c0d8;
-    border: 1px solid #7352d2;
+    border: 1px solid #c4b5ec;
+    /* border: 1px solid #7352d2; */
 }
 .about-us-block p{
-    color: #6084a4;
+    /* color: #6084a4; */
+    color: #65666d;
     font-weight: 300;
     font-family: "Hind Vadodara", sans-serif;
     line-height: 2rem;
@@ -444,28 +449,34 @@ styles for about us  */
 .about-us-block h4{
     /* font-weight: 200; */
     font-family: "Fira Sans", sans-serif;
-    color: #203f99;
+    /* color: #203f99; */
+    color: #ff1d0d;
     font-size: 18px;
 }
 .about-us-block:hover{
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #203f99;
     transition: 0.5s;
     transform: translateY(-10px);
     /* background: linear-gradient(117deg, #ec1a1a 0%, #203f99f5 100%); */
     /* background: linear-gradient(135deg, #ff000024 0%, rgb(247, 0, 4) 100%); */
     /* background: linear-gradient(135deg, #ec1a1a 0%, #203f99f5 100%); */
-    background: linear-gradient(135deg, #ffbf00 0%, rgba(247, 0, 4, 0.84) 100%);
+    /* background: linear-gradient(135deg, #ffbf00 0%, rgba(247, 0, 4, 0.84) 100%); */
 }
 .about-us-block:hover p,.about-us-block:hover span,.about-us-block:hover h4 {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #203f99;
 }
 .about-us-block:hover span{
-    background: #ffffffe3;
+    /* background: #ffffffe3;
+     */
     font-weight: bold;
+    color: #203f99;
   
 }
 .about-icon-container:hover {
-    color: #fff;
+    /* color: #fff; */
+    color: #203f99;
 }
 .fa-4x {
     font-size: 2em;
@@ -613,23 +624,26 @@ styles for about us  */
     font-size: 34px;
   }
   .our-service-sec p{
-    color: #203d99;
+    /* color: #203d99; */
+    color: #65666d;
     font-weight: 500;
     /* color: #6084a4; */
     line-height: 1.9;
   }
   .our-service-sec-block{
-    color: #6084a4;
+    /* color: #6084a4; */
+    color: #65666d;
     font-weight: 500;
     border-radius: 3px;
-    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08); */
+    box-shadow: 0 2px 48px 0 rgb(184, 208, 228);
   }
   
   .our-service-sec-block:hover {
-    color: #ffffff;
+    /* color: #ffffff; */
     transition: 0.5s;
     transform: translateY(-10px);
-    background: linear-gradient(117deg, #ec1a1a 0%, #5034ebe6 100%);
+    /* background: linear-gradient(117deg, #ec1a1a 0%, #5034ebe6 100%); */
   }
   .our-service-main-div{
       background-color: #f7fafd;

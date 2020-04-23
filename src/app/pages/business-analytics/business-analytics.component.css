@@ -71,9 +71,19 @@ i{
     top: 11px;
     color: white;
 }
-.cfont{
+/* .cfont{
     font-size: 48px;
     top: 2px;
+} */
+.fa_icon{
+    left: 9px !important;
+}
+.cfont{
+    /* font-size: 48px;
+    top: 2px; */
+    
+    font-size: 29px;
+    top: 8px;
 }
 .animate-right i{
     font-size: 31px;

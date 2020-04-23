@@ -5,7 +5,7 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-6">
-                        <div class="col-12 py-4">
+                        <div class="col-12 ">
                             <div class="contact-us-content offset-2 mt-5 py-5">
                                 <h3 class="mt-5 pt-5 ">Just Get In Touch
                                    
@@ -15,7 +15,7 @@
                                     Your business is important to us. We always listen to our clients needs and work with them to find the best possible solutions. If you have any other questions for us or would simply like to get in touch, we would love to hear from you.
                                 </p>
                                 <div class="py-3">
-                                    <a href="javascript:void(0)" (click)="contactScroll()" class="btn-style-two py-3">Contact Us</a>
+                                    <a href="javascript:void(0)" (click)="contactScroll()" class="btn-style-two py-3 text-primary">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -35,115 +35,44 @@
         </div>
     </div>
 </section>
-<section #secBox2 class="services-section">
-        <div class="container">
-            <!-- Sec Title -->
-            <div class="sec-title centered">
-                <h2 class="text-center  pb-5">Keep In Touch</h2>
-            </div>
-            
-            <div class="row clearfix">
-                
-                <!-- Services Block -->
-                <div class="information-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <i class="fa fa-building fa-2x icon-box-1"></i>
-                        </div>
-                        <h3 class="mt-2"> 
-                            Direct Contact</h3>
-                        <div class="text">0877-2233733<br>
-                            +91 720 721 3437
-                            info@sssbi.com
-                            frontoffice@sssbi.com</div>
-                    </div>
-                </div>
-                
-                <!-- Services Block -->
-                <div class="information-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box" >
-                        <div class="icon-box">
-                            <i class=" fa fa-globe fa-2x icon-box-2 " aria-hidden="true"></i>
-                        </div>
-                        <h3 class="mt-2">Sales-Marketing
-                        </h3>
-                        <div class="text"><br>+91 720 720 8385
-                                            sales@sssbi.com
-                                            marketing@sssbi.com
-    
-    
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Services Block -->
-                <div class="information-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box " >
-                        <div class="icon-box">
-                            <i class="fa fa-thumbs-o-up fa-2x icon-box-3 " aria-hidden="true"></i>
-                        </div>
-                        <h3 class="mt-2">Contact HR
-                        </h3>
-                        <div class="text">
-                            <br>+91 720 721 3561
-    
-                                hr@sssbi.com</div><br>
-                    </div>
-                </div>
-                
-                <!-- Services Block -->
-                <div class="information-block col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box" >
-                        <div class="icon-box">
-                            <i class="fa fa-star-half-o fa-2x icon-box-4" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="mt-2">Contact Staffing
-                        </h3>
-                        <div class="text"><br>+91 720 721 3562
-    
-                                staffing@sssbi.com</div>
-                                <br>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-</section>
+
 <section  class="mt-4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <div class="row mt-5">
+                    <div class="row">
                         <div class="col-6">
                                 <h4 id="contact-form" class="h4 text-danger text-center display-4 font-weight-bold">Drop Us a Line</h4>
                             <div class="row">
-                                <div class="col-7 offset-3">
-                                        <form action="" method="POST" (ngSubmit)="onFormSubmit()" name="ngForm" #ngForm="ngForm">
+                                <div class="col-7 offset-2">
+                                    <!-- <iframe src="https://services.cognitoforms.com/f/ppTzzSMNsk6jXI8gRUEenw?id=5" style="position:relative;width:1px;min-width:100%;*width:100%;" frameborder="0" scrolling="yes" seamless="seamless" height="487" width="100%"></iframe> -->
+                                        <form action="" name="ngForm" #ngForm="ngForm" novalidate>
                                             <div class="form-group">
                                             <label for="recipient-name" class="col-form-label"> Name:</label>
-                                            <input type="text" class="contact-form form-control border-bottom border-primary"  [(ngModel)]="model.name" name="name" >
+                                            <input type="text" class="contact-form form-control border-bottom border-primary"  [(ngModel)]="User.name" name="name" >
                                             </div>
                                             <div class="form-group">
                                                 <label for="recipient-name" class="col-form-label">Email:</label>
-                                                <input type="email" class=" contact-form form-control border-bottom border-primary" [(ngModel)]="model.email" name="email" >
+                                                <input type="email" class=" contact-form form-control border-bottom border-primary" [(ngModel)]="User.email" name="email" >
                                             </div>
                                             <div class="form-group">
                                                 <label for="recipient-name" class="col-form-label">Phone Number:</label>
-                                                <input type="number" class="contact-form form-control border-bottom border-primary" [(ngModel)]="model.phone" name="phone" >
+                                                <input type="number" class="contact-form form-control border-bottom border-primary" [(ngModel)]="User.ph_no" name="phone" >
                                             </div>
                                             <div class="form-group">
                                                     <label for="recipient-name" class="col-form-label">Message:</label>
-                                                    <input type="text" class=" contact-form form-control border-bottom border-primary" [(ngModel)]="model.message" name="message">
+                                                    <input type="text" class=" contact-form form-control border-bottom border-primary" [(ngModel)]="User.message" name="message">
                                                 </div>
                                             <div class="form-group">
                                                     <div class="top-tech-button mt-5">
-                                                            <button class="btn-style-two" >Send<span class="icon flaticon-next-3"></span></button>
+                                                            <!-- <button class="btn-style-two py-3 text-primary" >Send</button> -->
                                                             <!-- <input type="submit" class="btn   btn-style-two" name="insert" value="Submit"> -->
+                                                           <a href="javascript:void(0)" type="submit" class="btn-style-two py-3 text-primary" 
+                                                           (click)="onFormSubmit()">Send</a>
                                                     </div>
                                                 
                                             </div>
-                                        </form>
+                                        </form> 
                                 </div>
                             </div>
                             
@@ -155,6 +84,81 @@
                 </div>
             </div>
         </div>
+</section>
+<section #secBox2 class="services-section mb-5">
+    <div class="container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <h2 class="text-center  pb-5">Keep In Touch</h2>
+        </div>
+        
+        <div class="row clearfix">
+            
+            <!-- Services Block -->
+            <div class="information-block col-lg-3 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <div class="icon-box">
+                        <i class="fa fa-building fa-2x icon-box-1"></i>
+                    </div>
+                    <h3 class="mt-2"> 
+                        Direct Contact</h3>
+                    <div class="text">0877-2233733<br>
+                        +91 720 721 3437
+                        info@sssbi.com
+                        frontoffice@sssbi.com</div>
+                </div>
+            </div>
+            
+            <!-- Services Block -->
+            <div class="information-block col-lg-3 col-md-6 col-sm-12">
+                <div class="inner-box" >
+                    <div class="icon-box">
+                        <i class=" fa fa-globe fa-2x icon-box-2 " aria-hidden="true"></i>
+                    </div>
+                    <h3 class="mt-2">Sales-Marketing
+                    </h3>
+                    <div class="text"><br>+91 720 720 8385
+                                        sales@sssbi.com
+                                        marketing@sssbi.com
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services Block -->
+            <div class="information-block col-lg-3 col-md-6 col-sm-12">
+                <div class="inner-box " >
+                    <div class="icon-box">
+                        <i class="fa fa-thumbs-o-up fa-2x icon-box-3 " aria-hidden="true"></i>
+                    </div>
+                    <h3 class="mt-2">Contact HR
+                    </h3>
+                    <div class="text">
+                        <br>+91 720 721 3561
+
+                            hr@sssbi.com</div><br>
+                </div>
+            </div>
+            
+            <!-- Services Block -->
+            <div class="information-block col-lg-3 col-md-6 col-sm-12">
+                <div class="inner-box" >
+                    <div class="icon-box">
+                        <i class="fa fa-star-half-o fa-2x icon-box-4" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="mt-2">Contact Staffing
+                    </h3>
+                    <div class="text"><br>+91 720 721 3562
+
+                            staffing@sssbi.com</div>
+                            <br>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
 </section>
 <section>
     <div class="container-fluid">
