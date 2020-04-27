@@ -1,1 +1,129 @@
-<p>careers works!</p>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bi-solutions">
+                <div class="banner-image">
+                    <img src="assets/images/services/banners/staffing.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11">
+                <div class="bi-solutions-text py-5">
+                   <h3 class="text-center">
+                    DO YOU LIKE CHALLENGES? DO YOU LOVE TO EXPLORE MORE? COME JOIN US!
+                   </h3>
+                   <p class="text-center">
+                    At SSSBI, we tackle complex challenges, work hard, high-five and celebrate. We are fast learners, risk-takers. Together, we do tech talks, chats,team activities, fun and learning – Unlimited. We’ve built a team that does great work and we’re always looking for more whip-smart people to pipe up.
+                   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section  class="mt-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                            <!-- <h4 id="contact-form" class="h4 text-danger text-center display-4 font-weight-bold">Drop Us a Line</h4> -->
+                        <div class="row offset-3">
+                            <div class="col-8">
+                                
+                                    <form action="" name="ngForm" #ngForm="ngForm" novalidate>
+                                    <div class="row">
+                                        <div class="col-6">
+                                        <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label"> Job Title</label>
+                                        <input type="text" class="contact-form form-control border-bottom border-primary"  [(ngModel)]="jobDetails.job_title" name="job_title" >
+                                        </div>
+                                       
+                                        </div>
+                                        <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Job Location:</label>
+                                            <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                        </div>
+                                       
+                                       
+                                        </div>
+                                    </div> 
+                                    <div class="row"> 
+                                        <div class="col-10"> 
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="checkbox" class="form-check-input" name="freelance" [(ngModel)]="jobDetails.freelance" name="freelance">Freelance
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="checkbox" class="form-check-input" name="full_time" [(ngModel)]="jobDetails.full_time"> Full Time
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="checkbox" class="form-check-input" name="internship" [(ngModel)]="jobDetails.internship">Internship
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="checkbox" class="form-check-input" name="part_time" [(ngModel)]="jobDetails.part_time">Part Time
+                                                </label>
+                                              </div>
+                                              <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                  <input type="checkbox" class="form-check-input" name="temporary" 
+                                                  [(ngModel)]="jobDetails.temporary">Temporary
+                                                </label>
+                                              </div>
+                                              
+                                        </div>
+                                    </div> 
+                                    <div class="row"> 
+                                        <div class="col-10 row-justify-center"> 
+                                            <div class="form-group">
+                                                <div class="top-tech-button mt-3 ">
+                                                        
+                                                       <a href="javascript:void(0)" type="submit" class="btn-style-two py-3 px-5 text-primary" 
+                                                       (click)="getjoblist()">Search Jobs</a>
+                                                </div>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>   
+                                    </form> 
+
+                                  
+
+
+                                    <div class="div job_list mb-5 mt-5 " *ngFor="let row of job_list; let i=index;">
+                                      <a routerLink="/careers-inner/{{row.id}}" routerLinkActive="active"> <div class="row justify-content-center"   class="">
+                                          <div class="col-sm ">
+                                            <h6>Job Title <span class="text-danger job-details-gap"> :{{row.job_title}} </span> </h6>
+
+                                          </div>
+                                          <div class="col-sm">
+                                           <h6>Location <span class="job-details-gap">:{{row.job_location}}</span></h6>  
+                                          </div>
+                                          <div class="col-sm">
+                                           <h6>Job Type <span  class="job-details-gap">:{{row.job_type}}</span></h6> 
+                                          </div>
+                                        </div></a> 
+                                    </div>
+
+                                    </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+      
+    </div>
+</section>

@@ -30,4 +30,17 @@ postMethodData(url, data){
     return this.http.post(url,data, options).toPromise();
   }
 }
+getMethodData(url){
+  let userDetails = '';
+  userDetails = localStorage.getItem('authToken'); 
+  console.log(userDetails);
+  if(userDetails == undefined || userDetails == null){
+    return this.http.get(url).toPromise();
+  }else{
+    let headers = new HttpHeaders({ 
+    'Authorization': userDetails });
+    let options = { headers: headers };
+    return this.http.get(url, options).toPromise();
+  }
+}
 }

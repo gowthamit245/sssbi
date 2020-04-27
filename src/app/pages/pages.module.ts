@@ -20,6 +20,7 @@ import { DataScienceComponent } from './data-science/data-science.component';
 import { FormsModule }   from '@angular/forms';
 import { MoreTechnologiesComponent } from './more-technologies/more-technologies.component';
 import { CareersComponent } from './careers/careers.component';
+import { CareerInnerPageComponent } from './career-inner-page/career-inner-page.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,7 @@ const routes: Routes = [
       {path: 'success-stories', component: SuccessStoriesComponent},
       {path: 'services', component: ServicesComponent},
       {path: 'careers', component: CareersComponent},
+      {path: 'careers-inner/:id', component: CareerInnerPageComponent},
       {path: 'bi-solutions', component: BiSolutionsComponent},
       {path: 'business-analytics', component: BusinessAnalyticsComponent},
       {path: 'big-data', component: BigDataComponent},
@@ -47,7 +49,7 @@ const routes: Routes = [
    } ];
 
 @NgModule({
-  declarations: [LayoutComponent,AboutComponent,ContactComponent, SuccessStoriesComponent, ServicesComponent, BiSolutionsComponent, BusinessAnalyticsComponent, BigDataComponent, IotComponent, StaffingServicesComponent, DigitalMarketingComponent, ItOutsourceComponent, WebInterfaceComponent, JiraComponent, DataScienceComponent, MoreTechnologiesComponent, CareersComponent],
+  declarations: [LayoutComponent,AboutComponent,ContactComponent, SuccessStoriesComponent, ServicesComponent, BiSolutionsComponent, BusinessAnalyticsComponent, BigDataComponent, IotComponent, StaffingServicesComponent, DigitalMarketingComponent, ItOutsourceComponent, WebInterfaceComponent, JiraComponent, DataScienceComponent, MoreTechnologiesComponent, CareersComponent, CareerInnerPageComponent],
   imports: [
     CommonModule,FormsModule, RouterModule.forChild(routes)
   ]

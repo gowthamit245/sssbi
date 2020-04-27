@@ -1,0 +1,143 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bi-solutions">
+                <div class="banner-image">
+                    <img src="assets/images/services/banners/staffing.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bi-solutions">
+            </div>
+            <div class="col-7 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="div job_list mb-5 mt-5 " >
+                            <div class="row justify-content-center"   class="">
+                                <div class="col-sm ">
+                                  <h6>Job Title <span class="text-danger job-details-gap"> 
+                                      :{{eventDetails.job_title}} </span> </h6>
+
+                                </div>
+                                <div class="col-sm">
+                                 <h6>Location <span class="job-details-gap">:{{eventDetails.job_location}}</span></h6>  
+                                </div>
+                                <div class="col-sm">
+                                 <h6>Job Type <span  class="job-details-gap">:{{eventDetails.job_type}}</span></h6> 
+                                </div>
+                              </div> 
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 bi-solutions">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bi-solutions">
+            </div>
+            <div class="col-7 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="div job_list_apply mb-5 mt-5 " >
+                            <div class="row justify-content-center"   class="">
+                                <div class="col-sm ">
+                                  <h6>Employement Type <span class="text-bold job-details-gap"> 
+                                      :{{eventDetails.job_title}} </span> </h6>
+
+                                </div>
+                                <div class="col-sm">
+                                 <h6>Education <span class="job-details-gap">:{{eventDetails.job_location}}</span></h6>  
+                                </div>
+                                <div class="col-sm">
+                                 <h6>Exp Required <span  class="job-details-gap">:{{eventDetails.job_type}}</span></h6> 
+                                </div>
+                                <div class="col-sm">
+                                    <h6>Job Location <span  class="job-details-gap">:{{eventDetails.job_type}}</span></h6> 
+                                </div>
+                                <div class="col-sm">
+                                    <h6>Job Description <span  class="job-details-gap">:{{eventDetails.job_type}}</span></h6> 
+                                </div>
+                                <div class="col-sm">
+                                    <h6>Skills <span  class="job-details-gap">:{{eventDetails.job_type}}</span></h6> 
+                                </div>
+                              </div> 
+                        </div>
+                        <form action="" name="ngForm" #ngForm="ngForm" novalidate>
+                            <div class="row">
+                            <div class="col-8">
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label"> Name</label>
+                                <input type="text" class="contact-form form-control border-bottom border-primary"  [(ngModel)]="jobDetails.job_title" name="job_title" >
+                                </div>
+                               
+                               
+                               
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Email</label>
+                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Phone Number</label>
+                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Notice Period</label>
+                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                </div>
+                                <!-- <label class="form-check-label">What is your current employemnt status? -->
+                                    
+                                <div class="form-check-inline">
+                                      <input type="radio" class="form-check-input" name="freelance" [(ngModel)]="jobDetails.job_type" name="freelance">Employed
+                                   
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="full_time" [(ngModel)]="jobDetails.full_time"> Unemployed
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name="internship" [(ngModel)]="jobDetails.internship">Student
+                                    </label>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Upload your Resume</label>
+                                    <input type="file" class="contact-form form-control border-bottom resume-padding border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                </div>
+                            </div>   
+                               
+                            </div> 
+                        
+                            <div class="row"> 
+                                <div class="col-10 row-justify-center"> 
+                                    <div class="form-group">
+                                        <div class="top-tech-button mt-3 ">
+                                                
+                                               <a href="javascript:void(0)" type="submit" class="btn-style-two py-3 px-5 text-primary" 
+                                               (click)="onFormSubmit()">Apply Job</a>
+                                        </div>
+                                    
+                                </div>
+                                </div>
+                            </div>   
+                            </form> 
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 bi-solutions">
+            </div>
+        </div>
+    </div>
+</section>

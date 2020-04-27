@@ -29,6 +29,12 @@
     overflow: hidden;
     height: 84px;
   }
+  .job_list_apply{
+    border-radius: 5px;
+    box-shadow: 1px 3px 4px #9a9ab5;
+    overflow: hidden;
+    height: auto;
+  }
   .job_list_div{
     padding-bottom: 15px;
     padding-top: 15px;
@@ -37,4 +43,7 @@
   }
   .job-details-gap{
     margin-left: 43px;
+  }
+  .resume-padding{
+    padding-bottom: 39px;
   }

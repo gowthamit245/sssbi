@@ -70,5 +70,159 @@ loginInfo.user_deatils = function (req, res, next) {
 }
 
 
+// loginInfo.getjobdetails = function (req, res, next) { 
+  // console.log(req.body);
+  // input = req.body[0];
+  // console.log(input);
+//   var insertQuery=`SELECT * FROM job_tbl ORDER BY id  DESC `;
+//   console.log(insertQuery);
+//               con.query(insertQuery , function (err, result, fields) {
+//                   if(err){
+//                       console.log('Sql error');
+//                   } else {
+//                       // sendMail(input);
+//                       res.send({
+//                           "code": 200,
+//                           "message": 'success',
+//                           "data": result
+//                       });
+//                   }
+//               });
+// }
 
+loginInfo.searchJobs = function (req, res, next) { 
+  console.log(req.body);
+  input = req.body[0];
+  console.log(input);
+  var insertQuery=`SELECT * FROM job_tbl where job_title= '${input.job_title}' `;
+  console.log(insertQuery);
+              con.query(insertQuery , function (err, result, fields) {
+                  if(err){
+                      console.log('Sql error');
+                  } else {
+                      // sendMail(input);
+                      res.send({
+                          "code": 200,
+                          "message": 'success',
+                          "data": result
+                      });
+                  }
+              });
+}
+
+loginInfo.getjobDetailsOnId = function (req, res, next) { 
+  console.log(req.body);
+  input = req.body[0];
+  console.log(input);
+  var insertQuery=`SELECT * FROM job_tbl where id= ${input} `;
+  console.log(insertQuery);
+              con.query(insertQuery , function (err, result, fields) {
+                  if(err){
+                      console.log('Sql error');
+                  } else {
+                      // sendMail(input);
+                      res.send({
+                          "code": 200,
+                          "message": 'success',
+                          "data": result
+                      });
+                  }
+              });
+}
+loginInfo.getjobdetails = function (req, res, next) { 
+  console.log(req.body);
+  input = req.body[0];
+  console.log(input);
+  whereCondi=`WHERE  status = 'active' `;
+
+  checkWhereCondi = ``;
+if(input.full_time){
+    if(!checkWhereCondi){
+        checkWhereCondi= ` job_type='Full Time' `;
+    } else {
+        checkWhereCondi= checkWhereCondi + ` OR job_type='Full Time' `;
+    }
+}
+if(input.part_time){
+    if(!checkWhereCondi){
+        checkWhereCondi= ` job_type='Part Time' `;
+    } else {
+        checkWhereCondi= checkWhereCondi + `  OR job_type='Part Time' `;
+    }
+}
+if(input.temporary){
+    if(!checkWhereCondi){
+        checkWhereCondi= ` job_type='Temporary' `;
+    } else {
+        checkWhereCondi= checkWhereCondi + `  OR job_type='Temporary' `;
+    }
+}
+if(input.freelance){
+  if(!checkWhereCondi){
+      checkWhereCondi= ` job_type='Freelance' `;
+  } else {
+      checkWhereCondi= checkWhereCondi + `  OR job_type='Freelance' `;
+  }
+}
+if(input.internship){
+  if(!checkWhereCondi){
+      checkWhereCondi= ` job_type='Internship' `;
+  } else {
+      checkWhereCondi= checkWhereCondi + `  OR job_type='Internship' `;
+  }
+}
+
+// whereCondi = whereCondi + ` and ( ` + checkWhereCondi + ` ) `;
+// if(!checkWhereCondi){
+//   whereCondi = whereCondi + ` and ( ` + checkWhereCondi + ` ) `;
+// }
+
+ if(input.job_title){
+    whereCondi= whereCondi + ` and  job_title like '%${input.job_title}%' `;
+  }
+  if(input.job_location){
+    whereCondi= whereCondi + ` and  job_location like '%${input.job_location}%' `;
+  }
+
+  // if(input.full_time){
+  //   whereCondi= whereCondi + ` OR  job_type='Full Time' `;
+  // }
+  // if(input.part_time){
+  //   whereCondi= whereCondi + ` OR  job_type='Part Time' `;
+  // }
+  // if(input.temporary){
+  //   whereCondi= whereCondi + ` OR  job_type='Temporary' `;
+  // }
+  // if(input.freelance){
+  //   whereCondi= whereCondi + ` OR  job_type='Freelance' `;
+  // }
+  // if(input.internship){
+  //   whereCondi= whereCondi + ` OR  job_type='Internship' `;
+  // }
+  // if(input.job_title){
+  //   whereCondi= whereCondi + ` and  job_title like '%${input.job_title}%' `;
+  // }
+  // if(input.job_location){
+  //   whereCondi= whereCondi + ` and  locatoin like '%${input.job_location}%' `;
+  // }
+  whereCondi = whereCondi +` ORDER BY id  DESC`;
+
+  var selectQuery=`SELECT * from job_tbl ${whereCondi}`;
+  
+ console.log(selectQuery);
+  // var insertQuery=`SELECT * FROM job_tbl ORDER BY id  DESC `;
+  // console.log(insertQuery);
+              con.query(selectQuery , function (err, result, fields) {
+                  if(err){
+                      console.log('Sql error');
+                  } else {
+                      // sendMail(input);
+                      res.send({
+                          "code": 200,
+                          "message": 'success',
+                          "data": result
+                      });
+                  }
+              });
+}
 module.exports = loginInfo;
