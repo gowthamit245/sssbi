@@ -3,7 +3,7 @@ var config = require('../config');
 // var passwordHash = require('password-hash');
 var con = mysql.createConnection(config);
 var loginInfo = {};
- 
+
 // function makeid(length) {
 //   var result           = '';
 //   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -69,7 +69,36 @@ loginInfo.user_deatils = function (req, res, next) {
    
 }
 
-
+loginInfo.insertApplyJobDetails = function (req, res, next) { 
+  console.log(req.body);
+  input = req.body[0];
+  console.log(input);
+    let imgPath = req.resume;
+    let imgPathUrl = '';
+    let filename = '';
+    if(input.imgPath){
+        let imgPathInfo = imgPath.uploads[0].path;
+        filename= imgPath.uploads[0].originalFilename;
+        imgPathUrl = imgPathInfo.split('\\')[5];
+    }
+    console.log(imgPathUrl);
+  var insertQuery=`INSERT INTO apply_job_details (name, email, ph_no, notice_period, resume, user_status) VALUES ('${input.name}',
+  '${input.email}',
+  '${input.ph_no}','${input.notice_period}','${input.resume}', '${input.user_status}')`;
+  console.log(insertQuery);
+              con.query(insertQuery , function (err, result, fields) {
+                  if(err){
+                      console.log('Sql error');
+                  } else {
+                      res.send({
+                          "code": 200,
+                          "message": 'success',
+                          "data": result
+                      });
+                  }
+              });
+ 
+}
 // loginInfo.getjobdetails = function (req, res, next) { 
   // console.log(req.body);
   // input = req.body[0];

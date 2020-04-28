@@ -9,4 +9,5 @@ export const URL = {
   getjobdetails  :  server + 'user/getjobdetails',
   searchJobs :  server + 'user/searchJobs',
   getjobDetailsOnId :  server + 'user/getjobDetailsOnId',
+  insertApplyJobDetails :  server + 'user/insertApplyJobDetails',
 };

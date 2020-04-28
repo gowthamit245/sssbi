@@ -47,3 +47,7 @@
   .resume-padding{
     padding-bottom: 39px;
   }
+  .details_list h6{
+    font-weight: bolder;
+    font-size: 13px!important;
+  }

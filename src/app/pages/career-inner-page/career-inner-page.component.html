@@ -14,13 +14,14 @@
         <div class="row">
             <div class="col-3 bi-solutions">
             </div>
-            <div class="col-7 ">
+            <div class="col-6 ">
                 <div class="row">
                     <div class="col-12">
+                        <h4 class="text-danger">We Are Hiring  {{eventDetails.job_title}} </h4>
                         <div class="div job_list mb-5 mt-5 " >
                             <div class="row justify-content-center"   class="">
                                 <div class="col-sm ">
-                                  <h6>Job Title <span class="text-danger job-details-gap"> 
+                                  <h6>Job Title <span class="text-primary job-details-gap"> 
                                       :{{eventDetails.job_title}} </span> </h6>
 
                                 </div>
@@ -46,11 +47,12 @@
         <div class="row">
             <div class="col-3 bi-solutions">
             </div>
-            <div class="col-7 ">
+            <div class="col-6 ">
                 <div class="row">
                     <div class="col-12">
+                        <h4 class="text-danger">Job Details</h4>
                         <div class="div job_list_apply mb-5 mt-5 " >
-                            <div class="row justify-content-center"   class="">
+                            <div class="row justify-content-center"   class="details_list">
                                 <div class="col-sm ">
                                   <h6>Employement Type <span class="text-bold job-details-gap"> 
                                       :{{eventDetails.job_title}} </span> </h6>
@@ -73,47 +75,58 @@
                                 </div>
                               </div> 
                         </div>
-                        <form action="" name="ngForm" #ngForm="ngForm" novalidate>
+                        <form action="" name="ngForm" #ngForm="ngForm" novalidate method="post" enctype="multipart/form-data">
+
                             <div class="row">
                             <div class="col-8">
+                                <h4 class="text-danger">Apply For The Job</h4>
                                 <div class="form-group">
                                 <label for="recipient-name" class="col-form-label"> Name</label>
-                                <input type="text" class="contact-form form-control border-bottom border-primary"  [(ngModel)]="jobDetails.job_title" name="job_title" >
+                                <input type="text" class="contact-form form-control border-bottom border-primary"  [(ngModel)]="userJobDetails.name" name="name" >
                                 </div>
                                
                                
                                
                                 <div class="form-group">
                                     <label for="recipient-name" class="col-form-label">Email</label>
-                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="userJobDetails.email" name="email" >
                                 </div>
                                 <div class="form-group">
                                     <label for="recipient-name" class="col-form-label">Phone Number</label>
-                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="userJobDetails.ph_no" name="ph_no" >
                                 </div>
                                 <div class="form-group">
                                     <label for="recipient-name" class="col-form-label">Notice Period</label>
-                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                    <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="userJobDetails.notice_period" name="job_location" >
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1" class="col-form-label">Select Current Status</label>
+                                    <select class="form-control" id="exampleFormControlSelect1"
+                                     [(ngModel)]="userJobDetails.user_status"  name="user_status"  class="contact-form form-control border-bottom border-primary">
+                                      <option value="Employed">Employed</option>
+                                      <option value="Unemployed">Unemployed</option>
+                                      <option value="Student">Student</option>
+                                    </select>
+                                  </div>
                                 <!-- <label class="form-check-label">What is your current employemnt status? -->
                                     
-                                <div class="form-check-inline">
-                                      <input type="radio" class="form-check-input" name="freelance" [(ngModel)]="jobDetails.job_type" name="freelance">Employed
+                                <!-- <div class="form-check-inline">
+                                      <input type="radio" class="form-check-input" name="user_status" [(ngModel)]="userJobDetails.employed" name="Employed">Employed
                                    
                                   </div>
                                   <div class="form-check-inline">
                                     <label class="form-check-label">
-                                      <input type="radio" class="form-check-input" name="full_time" [(ngModel)]="jobDetails.full_time"> Unemployed
+                                      <input type="radio" class="form-check-input" name="user_status" [(ngModel)]="userJobDetails.unemployed"> Unemployed
                                     </label>
                                   </div>
                                   <div class="form-check-inline">
                                     <label class="form-check-label">
-                                      <input type="radio" class="form-check-input" name="internship" [(ngModel)]="jobDetails.internship">Student
+                                      <input type="radio" class="form-check-input" name="user_status" [(ngModel)]="userJobDetails.student">Student
                                     </label>
-                                  </div>
+                                  </div> -->
                                   <div class="form-group">
                                     <label for="recipient-name" class="col-form-label">Upload your Resume</label>
-                                    <input type="file" class="contact-form form-control border-bottom resume-padding border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
+                                    <input type="file" class="contact-form form-control border-bottom resume-padding border-primary" [(ngModel)]="userJobDetails.resume" name="job_location" >
                                 </div>
                             </div>   
                                
@@ -124,7 +137,7 @@
                                     <div class="form-group">
                                         <div class="top-tech-button mt-3 ">
                                                 
-                                               <a href="javascript:void(0)" type="submit" class="btn-style-two py-3 px-5 text-primary" 
+                                               <a href="javascript:void(0)" type="submit" class="btn-style-two py-3 px-5 text-danger" 
                                                (click)="onFormSubmit()">Apply Job</a>
                                         </div>
                                     
