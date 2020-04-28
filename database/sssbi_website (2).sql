@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2020 at 01:05 PM
+-- Generation Time: Apr 28, 2020 at 08:22 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.27
 
@@ -21,6 +21,39 @@ SET time_zone = "+00:00";
 --
 -- Database: `sssbi_website`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `apply_job_details`
+--
+
+CREATE TABLE `apply_job_details` (
+  `id` int(11) NOT NULL,
+  `name` varchar(250) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `ph_no` varchar(250) NOT NULL,
+  `notice_period` varchar(250) NOT NULL,
+  `user_status` varchar(250) NOT NULL,
+  `resume` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `apply_job_details`
+--
+
+INSERT INTO `apply_job_details` (`id`, `name`, `email`, `ph_no`, `notice_period`, `user_status`, `resume`) VALUES
+(1, 'undefined', 'undefined', 'undefined', 'undefined', '', ''),
+(2, 'undefined', 'undefined', 'undefined', 'undefined', '', ''),
+(3, 'undefined', 'undefined', 'undefined', 'undefined', '', ''),
+(4, 'undefined', 'undefined', 'undefined', 'undefined', '', ''),
+(5, 'undefined', 'undefined', 'undefined', 'undefined', '', ''),
+(6, 'undefined', 'undefined', 'undefined', 'undefined', '', ''),
+(7, 'gowtham', 'gowthamireddy245@gmail.com', '78883474', '3months', '', ''),
+(8, 'gowtham', 'gowthamireddy245@gmail.com', '78883474', '3months', '', 'C:fakepathall_icons.png'),
+(9, 'harsha', '', '', '', '', 'C:fakepath24-03-2020.xlsx'),
+(10, '', '', '', '', '', 'undefined'),
+(11, '', '', '', '', 'Employed', 'undefined');
 
 -- --------------------------------------------------------
 
@@ -83,6 +116,12 @@ INSERT INTO `job_tbl` (`id`, `job_title`, `job_location`, `job_type`, `created_d
 --
 
 --
+-- Indexes for table `apply_job_details`
+--
+ALTER TABLE `apply_job_details`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `contact_form`
 --
 ALTER TABLE `contact_form`
@@ -97,6 +136,12 @@ ALTER TABLE `job_tbl`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `apply_job_details`
+--
+ALTER TABLE `apply_job_details`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `contact_form`

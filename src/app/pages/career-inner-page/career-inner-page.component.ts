@@ -109,13 +109,13 @@ export class CareerInnerPageComponent implements OnInit {
             console.log(result[0].data);
            this.job_list = result[0].data;
           //  this.eventDetails=this.job_list.find(x=>x.id==this.id);
-            // this.commonService.showSuccess('Successfully Submitted.');	
+            this.commonService.showSuccess('Successfully Submitted.');	
             
           // this.router.navigate(['/sales-details']);
           }  else if(result[0].code == 201){
             this.commonService.showError(result[0].message);
           }else  {
-            // this.commonService.showError('Failed to Submit');  
+            this.commonService.showError('Failed to Submit');  
           }
         }
         resolve('done');
