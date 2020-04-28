@@ -71,20 +71,18 @@ loginInfo.user_deatils = function (req, res, next) {
 
 loginInfo.insertApplyJobDetails = function (req, res, next) { 
   console.log(req.body);
-  input = req.body[0];
-  console.log(input);
-    let imgPath = req.resume;
-    let imgPathUrl = '';
-    let filename = '';
-    if(input.imgPath){
-        let imgPathInfo = imgPath.uploads[0].path;
-        filename= imgPath.uploads[0].originalFilename;
-        imgPathUrl = imgPathInfo.split('\\')[5];
-    }
-    console.log(imgPathUrl);
+  input =   JSON.parse(req.body.input_user);
+  imagefile  = req.files;
+   console.log(imagefile);
+   let imgPathUrl = '';
+   if(imagefile){
+       let imgPath = imagefile.uploads.path;
+       imgArr = imgPath.split('\\');
+       imgPathUrl = imgArr[imgArr.length-1];
+   }
   var insertQuery=`INSERT INTO apply_job_details (name, email, ph_no, notice_period, resume, user_status) VALUES ('${input.name}',
   '${input.email}',
-  '${input.ph_no}','${input.notice_period}','${input.resume}', '${input.user_status}')`;
+  '${input.ph_no}','${input.notice_period}','${imgPathUrl}', '${input.user_status}')`;
   console.log(insertQuery);
               con.query(insertQuery , function (err, result, fields) {
                   if(err){

@@ -30,6 +30,24 @@ postMethodData(url, data){
     return this.http.post(url,data, options).toPromise();
   }
 }
+postFormMethodData(url, data){ 
+    let userDetails = '';
+    userDetails = localStorage.getItem('authToken'); 
+    
+    // var jsonString = JSON.stringify(data);
+    // if(jsonString != undefined)
+    // jsonString = jsonString.replace("'", "''");
+    // data = JSON.parse(jsonString); 
+    
+    if(userDetails == undefined || userDetails == null){
+      return this.http.post(url,data).toPromise();
+    }else{
+      let headers = new HttpHeaders({ 
+      'Authorization': userDetails });
+      let options = { headers: headers };
+      return this.http.post(url,data, options).toPromise();
+    }
+  }
 getMethodData(url){
   let userDetails = '';
   userDetails = localStorage.getItem('authToken'); 

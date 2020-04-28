@@ -1,9 +1,17 @@
 var userApi = require('./userapi');
-
+var path = require('path');
 const multipart = require('connect-multiparty');
+var counter = 0;
+var EXT_RE = /(\.[_\-a-zA-Z0-9]{0,16}).*/g;
 const multipartMiddleware = multipart({
-    uploadDir: '../src/assets/images/uploads'
+    uploadDir : '../src/assets/uploads',
+    
+    // filename: function(filename, callback){
+    //   counter++;
+    //   var name = filename.replace(EXT_RE, "");
+    //   callback(name+'-YEAH-'+counter+'.png');
 
+    // }
 });
 module.exports = function (app) { 
 
