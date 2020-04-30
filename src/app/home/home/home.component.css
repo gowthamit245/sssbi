@@ -797,7 +797,7 @@ styles for about us  */
     }
     .our-service-sec h3{
         color: #43378a;
-        font-size: 34px;
+        font-size: 22px;
     }
 
     .awards-carousel-div{
@@ -846,4 +846,125 @@ styles for about us  */
         color: #01376c;
         font-family: "proxima",sans-serif;
         font-weight: 700;
+    }
+
+
+/* Medium devices (small mobiles, 576px and up) */
+    @media (max-width: 575px) { 
+        .banner-sec-text h1{
+            font-size: 22px;
+            margin-top: -125px;
+
+        }
+        .banner-sec-text p{
+            display: none;
+        }
+        .home-page-btn{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 21px;
+            padding-right: 20px;
+        }
+        .top-tech-button{
+            margin-left: 6em;
+        }
+        .our-ser-btn{
+            display: none;
+        }
+        .circle_rotate::before{
+            display: none;
+        }
+        .circle_rotate img{
+            margin-top: -14em;
+            width: 471px;
+            height: 356px;
+        }
+        .our-met{
+            margin-top: -16em;
+        }
+        .our-met h2, p{
+            text-align: center;
+        }
+        .wy-choose-u{
+            margin-top: -26px;
+        }
+        .about-us-block  {
+            /* padding-left: 32px;
+            padding-bottom: 36px; */
+            width: 299px;
+            margin-left: 60px;
+        }
+        .about-us-block-div{
+            margin-bottom: 18px;
+           
+        }
+        .top-technology h4{
+            font-size: 29px;
+            text-align: center;
+        }
+        .top-technology{
+            margin-left: 0px;
+        }
+        .boxTechView .tech-3{
+            left: 37%;
+            top: 19%;
+        }
+        .boxTechView .tech-2{
+            left: 20%;
+            top: 6%;
+        }
+        .boxTechView .tech-1 {
+            left: 24%;
+            top: 42%;
+        }
+        .boxTechView .tech-8 {
+            left: 23%;
+            top: 64%;
+        }.boxTechView .tech-9{
+            left: 65%;
+            top: 50%;
+        }
+        .services{
+            margin-top: -8em;
+        }
+        .our-service-sec h3{
+            font-size: 19px;
+        }
+        .bi-btn{
+            margin-left: -2rem!important;
+        }
+        .service-box-1{
+            margin-bottom: 3em;
+        }
+        .awards-heading{
+            display: none;
+        }
+        .awards-bg-image{
+            display: none;
+        }
+        .awrds-main-div-slider{
+            display: none;
+        }
+        .case-btn{
+            margin-left: 0px;
+        }
+        .case-btn-btn{
+            margin-left: 57px;
+        }
+        .trusted-clients{
+            height: 82px;
+        }
+        .information-block{
+            width: 80%;
+            margin-left: 43px;
+            margin-bottom: 26px;
+        }
+
+    }
+
+    
+/* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+
+
     }

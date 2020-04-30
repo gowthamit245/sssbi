@@ -453,3 +453,14 @@
     color: #01376c;
     font-weight: 700;
 }
+
+/* Medium devices (small mobiles, 576px and up) */
+@media (max-width: 575px) { 
+    .abt-sec-1{
+        margin-top: -25em;
+    }
+    .about-text  p{
+        text-align: justify;
+    }
+
+}
