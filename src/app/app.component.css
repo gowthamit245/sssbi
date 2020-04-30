@@ -542,7 +542,8 @@ background: #df9926 url(../assets/images/m1.png);
     }
     #footer ul.quick-links li {
         text-align: initial;
-    
+        font-size: 15px;
+        
     }
     .list-unstyled {
     margin-left: 48px;
@@ -550,6 +551,9 @@ background: #df9926 url(../assets/images/m1.png);
     }
     .site-links{
         margin-left: -22px;
+    }
+    .footer-text p{
+        font-size: 12px!important;
     }
 
 }
@@ -561,4 +565,5 @@ background: #df9926 url(../assets/images/m1.png);
     .logo{
         width: 598px;
     }
+  
 }

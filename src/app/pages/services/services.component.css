@@ -355,3 +355,37 @@ figure.img-sec p {
   .overflow-hidden{
       overflow: hidden;
   }
+
+
+  @media(max-width : 575px){
+      .service-sec-2{
+        margin-top: -26em;
+      }
+      .our-service-sec h2{
+          font-size: 20px;
+      }
+      .our-service-sec h4{
+          font-size: 18px;
+          margin-top: -1em;
+      }
+      .service-sec-3{
+        margin-top: -3em;
+      }
+      .banner-image{
+        height: 524px;
+      }
+      .technologies{
+        margin-top: -5em;
+      }
+      .displaying-div{
+          display: none;
+      }
+      .image-size {
+        height: 62px;
+
+      }
+      .image-size p{
+        font-size: 14px;
+      }
+
+  }

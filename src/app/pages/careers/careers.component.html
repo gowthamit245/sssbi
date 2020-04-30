@@ -30,21 +30,21 @@
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-11 col-lg-8">
                             <!-- <h4 id="contact-form" class="h4 text-danger text-center display-4 font-weight-bold">Drop Us a Line</h4> -->
-                        <div class="row offset-3">
-                            <div class="col-8">
+                        <div class="row offset-3 form-left-align">
+                            <div class=" form-div ">
                                 
-                                    <form action="" name="ngForm" #ngForm="ngForm" novalidate>
+                                    <form action="" name="ngForm" #ngForm="ngForm" novalidate class="s-form">
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-10 col-lg-6">
                                         <div class="form-group">
                                         <label for="recipient-name" class="col-form-label"> Job Title</label>
                                         <input type="text" class="contact-form form-control border-bottom border-primary"  [(ngModel)]="jobDetails.job_title" name="job_title" >
                                         </div>
                                        
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-10 col-lg-6">
                                         <div class="form-group">
                                             <label for="recipient-name" class="col-form-label">Job Location:</label>
                                             <input type="text" class="contact-form form-control border-bottom border-primary" [(ngModel)]="jobDetails.job_location" name="job_location" >
@@ -54,7 +54,7 @@
                                         </div>
                                     </div> 
                                     <div class="row"> 
-                                        <div class="col-10"> 
+                                        <div class="col-12"> 
                                             <div class="form-check-inline">
                                                 <label class="form-check-label">
                                                   <input type="checkbox" class="form-check-input" name="freelance" [(ngModel)]="jobDetails.freelance" name="freelance">Freelance

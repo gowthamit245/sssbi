@@ -268,3 +268,41 @@
   .btn-style-two{
       outline: 0px solid red;
   }
+
+  @media (max-width: 775px){
+    .contact-round-image{
+        display: none;
+    }
+    .contact-sec-1{
+        margin-top: -94px;
+        margin-left: -37px;
+    }
+    .contact-us-content h3{
+        font-size: 18px !important;
+    }
+    .contact-us-content h1{
+        font-size: 28px !important;
+    }
+   
+    .contact-us-content p{
+        font-size: 15px;
+    }
+    .sec-title h2{
+        font-size: 30px !important;
+    }
+    .information-block{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 26px;
+    }
+    .cont-drop h4{
+        font-size: 30px;
+    }
+    .inner-box h3{
+        font-size: 20px!important;
+    }
+    .drop-form{
+        margin-left: 2px;
+    }
+
+  }

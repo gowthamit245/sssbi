@@ -38,3 +38,34 @@
   .job-details-gap{
     margin-left: 43px;
   }
+.form-div{
+  margin-left: 10em;
+}
+  @media (max-width:575px){
+    .banner-image{
+      height: 172px;
+    }
+    .bi-solutions-text h3{
+      margin-top: -21px;
+      font-size: 12px;
+      line-height: 2em;
+      font-weight: 700;
+    }
+    .bi-solutions-text p{
+      font-size: 13px;
+      line-height: 25px;
+    }
+    .s-form {
+      margin-left: -56px;
+    }
+    .col-form-label{
+      font-size: 13px;
+    }
+    .form-check-label{
+      font-size: 13px!important;
+    }
+    .form-left-align{
+      margin-left: -19%!important;
+    }
+
+  }

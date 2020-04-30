@@ -959,7 +959,12 @@ styles for about us  */
             margin-left: 43px;
             margin-bottom: 26px;
         }
-
+        .icon-box h3{
+            font-size: 19px!important;
+        }
+        .icon-box h3{
+            font-size: 21px!important;
+        }
     }
 
     

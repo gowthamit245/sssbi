@@ -27,7 +27,7 @@
   .about-text p{
       /* color: #1e3a8f; */
     /* color: #8996a6; */
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
     color: #7a7c7f;
     font-family: "proxima",sans-serif;
@@ -461,6 +461,56 @@
     }
     .about-text  p{
         text-align: justify;
+        font-size: 14px;
     }
+    .about-vision-section{
+        margin-left: 42px;
+        margin-top: 46px;
+    }
+    .about-vision-section{
+        border-left: none;
+        border-right:none;
+    }
+    .about-vision-section-content p{
+        font-size: 13px;
+        margin-left: 21px;
+    }
+    .our-service-sec h2{
+        font-size: 24px;
+    }
+    .about-vision-section-content h3{
+        margin-left: 19px!important;
+        font-size: 18px !important;
 
+    }
+    .about-vision-section-inner{
+        height: 102px !important;
+        margin-top: -13px !important;
+    }
+    .our-steps{
+        margin-top: -21px!important;
+
+    }
+    .team-section{
+        margin-top: -90px;
+    }
+    .about-us-block-div{
+        margin-top: 21px;
+        padding-left: 77px;
+        padding-right: 85px;
+    }
+    .team-content p{
+        
+    font-size: 15px;
+    }
+    .team-info{
+        font-size: 13px;
+    }
+    .team-main-div{
+        margin-top: -62px!important;
+    }
+    .about-sec-3{
+        display: none;
+    }
+ 
 }

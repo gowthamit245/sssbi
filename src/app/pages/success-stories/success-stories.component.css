@@ -303,3 +303,47 @@ background-size: 76% 157px;
 .ct-tab-container{
   overflow: hidden;
 }
+
+@media (max-width : 575px){
+  .success-sec{
+      margin-top: -23rem!important;
+  }
+  .success-content-hs  {
+    font-size: 21px;
+  }
+  .success-content-p{
+    font-size: 14px;
+    margin-top: -19px;
+  }
+  .all img{
+    height: 76px;
+    width: 51px;
+  }
+  .bi img{
+    height: 76px;
+    width: 51px;
+  }
+  .enterprise-it img{
+    height: 76px;
+    width: 51px;
+  }
+  .enterprize-mobility img{
+    height: 76px;
+    width: 51px;
+  }
+  .tech-consult img{
+    height: 76px;
+    width: 51px;
+  }
+  .web-services img{
+    height: 76px;
+    width: 51px;
+  }
+  ._all{
+    margin-left: -30px;
+  }
+  .no-gutters {
+    margin-top: -60px;
+  }
+
+}
