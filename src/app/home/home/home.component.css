@@ -865,6 +865,9 @@ styles for about us  */
             padding-left: 21px;
             padding-right: 20px;
         }
+        .case-s-sec-div {
+            margin-left: 0px!important;
+        }
         .top-tech-button{
             margin-left: 6em;
         }
@@ -930,8 +933,11 @@ styles for about us  */
         .our-service-sec h3{
             font-size: 19px;
         }
-        .bi-btn{
+        /* .bi-btn{
             margin-left: -2rem!important;
+        } */
+        .theme-btn {
+            margin-left: 5em!important;
         }
         .service-box-1{
             margin-bottom: 3em;
@@ -971,5 +977,105 @@ styles for about us  */
 /* Medium devices (tablets, 768px and up) */
     @media (min-width: 768px) { 
 
+        .banner-sec-text p{
+            display: none;
+        }
+        /* .our-ser-btn{
+            display: none;
+        } */
+        .home-page-btn {
+            padding: 8px 13px;
+        }.banner-sec-text h1{
+            font-size: 30px;
+            margin-bottom: 38px;
+        }    
+        .centers{
+            content: none;
+        }
+        .circle_rotate::before{
+            content:none;
+           
+            background-image:none;
+           
+        }
+        .case-btn{
+            margin-left: 0em;
+        }
+        .accountability-dev{
+            display: none;
+        }
+        .our-met h2, p{
+            text-align: center;
+        }
+        .top-technology p{
+            /* margin-left: -5em!important; */
+            margin-left: 0em!important;
+        }
+        .top-technology h4{
+            margin-left: 125px;
+        }
+        .top-btn-1{
+            margin-left: 10em;
+        }
+        .theme-btn{
+            margin-left: 17em!important;
 
+        }
+        .tech-1{
+            margin-left: 12px;
+        }
+        .tech-8{
+            margin-left: 23px;
+        }
+        .awrds-main-div-slider{
+            height: 351px !important;
+        }
+        .awrds-main-div-slider h1{
+            display: none;
+        }
+        .case-s-sec{
+            margin-top: -7em;
+        }
+        .case-s-sec-div{
+            margin-left: 90px;
+        }
+        .case-btn-btn{
+            margin-left: 13em;
+        }
+        .information-block{
+            /* margin-left: 4em; */
+            margin-bottom: 32px;
+        }
+        .keep-div{
+            margin-left: 4em;
+        }
+        .sec-box-h{
+            display: none;
+        }
+        .top-tech-button{
+            margin-left: 2em;
+        }
+   
+
+    }
+
+    @media (min-width: 1024px) { 
+        .top-technology{
+            margin-left: 1.1em!important;
+        }
+        .circle_rotate::before{
+            content:none;
+           
+            background-image:none;
+           
+        }
+        .icon-container{
+            margin-left: 12px;
+        }
+        .top-tech-button{
+            margin-left: -25px;
+        }
+        .keep-dev-1{
+            padding-bottom: 5em!important;
+        }    
     }
