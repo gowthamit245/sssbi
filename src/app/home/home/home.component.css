@@ -853,7 +853,9 @@ styles for about us  */
     @media (max-width: 575px) { 
         .banner-sec-text h1{
             font-size: 22px;
-            margin-top: -125px;
+            margin-top: -179px;
+
+            /* margin-top: -125px; */
 
         }
         .banner-sec-text p{
@@ -933,12 +935,12 @@ styles for about us  */
         .our-service-sec h3{
             font-size: 19px;
         }
-        /* .bi-btn{
+        .bi-btn{
             margin-left: -2rem!important;
-        } */
-        .theme-btn {
-            margin-left: 5em!important;
         }
+        /* .theme-btn {
+            margin-left: 5em!important;
+        } */
         .service-box-1{
             margin-bottom: 3em;
         }
@@ -974,15 +976,13 @@ styles for about us  */
     }
 
     
-/* Medium devices (tablets, 768px and up) */
-    @media (min-width: 768px) { 
+/* Medium devices (tablets, 768px and up)  @media (min-width: 768px) */
+@media (min-width: 576px) and (max-width: 768px) { 
 
         .banner-sec-text p{
             display: none;
         }
-        /* .our-ser-btn{
-            display: none;
-        } */
+      
         .home-page-btn {
             padding: 8px 13px;
         }.banner-sec-text h1{
@@ -1058,8 +1058,11 @@ styles for about us  */
    
 
     }
+   
 
-    @media (min-width: 1024px) { 
+
+
+    /* @media (min-width: 1024px) { 
         .top-technology{
             margin-left: 1.1em!important;
         }
@@ -1078,4 +1081,4 @@ styles for about us  */
         .keep-dev-1{
             padding-bottom: 5em!important;
         }    
-    }
+    } */
