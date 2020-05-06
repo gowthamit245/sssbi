@@ -1055,22 +1055,15 @@ styles for about us  */
         .top-tech-button{
             margin-left: 2em;
         }
-   
-
     }
    
-
-
-
-    /* @media (min-width: 1024px) { 
+    @media (min-width: 769px) and (max-width: 1024px) { 
         .top-technology{
             margin-left: 1.1em!important;
         }
         .circle_rotate::before{
             content:none;
-           
             background-image:none;
-           
         }
         .icon-container{
             margin-left: 12px;
@@ -1080,5 +1073,5 @@ styles for about us  */
         }
         .keep-dev-1{
             padding-bottom: 5em!important;
-        }    
-    } */
+        }   
+    }
